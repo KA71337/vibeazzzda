@@ -1,6 +1,6 @@
 import 'server-only';
 import {createHmac,randomBytes,timingSafeEqual,createHash} from 'node:crypto';
-import {cookies,headers} from 'next/headers';
+import {cookies} from 'next/headers';
 import {NextRequest,NextResponse} from 'next/server';
 import {getConfig} from './config';
 const COOKIE='vibe_admin_session', HOURS=8;
@@ -16,5 +16,5 @@ export function clearSession(res:NextResponse){res.cookies.set(COOKIE,'',{httpOn
 const attempts=new Map<string,{n:number;until:number}>();
 export function throttle(key:string,limit=8,windowMs=60_000){const now=Date.now(),v=attempts.get(key);if(!v||v.until<now){attempts.set(key,{n:1,until:now+windowMs});return false}v.n++;return v.n>limit}
 export function clientKey(req:NextRequest){return req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()||'unknown'}
-export async function protectMutation(req:NextRequest){const cfg=getConfig();if(!cfg)return 'Сервер не настроен';const origin=req.headers.get('origin');const host=req.headers.get('host');if(!origin||new URL(origin).host!==host)return 'Запрос с другого источника запрещён';const session=decodeSession(req.cookies.get(COOKIE)?.value,cfg.sessionSecret);if(!session)return 'Требуется вход';if(!safeEqual(req.headers.get('x-csrf-token')||'',session.csrf))return 'Неверный CSRF-токен';return null}
+export async function protectMutation(req:NextRequest){const cfg=getConfig();if(!cfg)return 'Сервер не настроен';const origin=req.headers.get('origin'),host=req.headers.get('host'),forwardedProto=req.headers.get('x-forwarded-proto')?.split(',')[0]?.trim(),expectedProtocol=forwardedProto||(process.env.NODE_ENV==='production'?'https':'http');let parsed:URL;try{parsed=new URL(origin||'')}catch{return 'Запрос с другого источника запрещён'}if(!host||parsed.host!==host||parsed.protocol!==expectedProtocol+':')return 'Запрос с другого источника запрещён';const session=decodeSession(req.cookies.get(COOKIE)?.value,cfg.sessionSecret);if(!session)return 'Требуется вход';if(!safeEqual(req.headers.get('x-csrf-token')||'',session.csrf))return 'Неверный CSRF-токен';return null}
 export const noStore={'Cache-Control':'no-store, max-age=0','Pragma':'no-cache'};

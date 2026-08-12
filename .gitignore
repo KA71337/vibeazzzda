@@ -3,3 +3,11 @@ node_modules/
 .env
 .env.local
 .env*.local
+out/
+*.log
+logs/
+!.env.example
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
