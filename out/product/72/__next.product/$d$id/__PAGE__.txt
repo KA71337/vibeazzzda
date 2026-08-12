@@ -1,0 +1,50 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+a:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+b:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+d:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+e:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+3:T991,Bəli
+Açıq havada, çimərlikdə, həyətdə, piknikdə və ya idman zalında rahatlıqla voleybol, badminton və ayaq tenisi (tenisbol) oynamaq üçün ideal portativ şəbəkə (tor) seti!
+Bu dəst xüsusi qatlanan metal karkas ayaqlardan, möhkəm və cırılmaya davamlı tor şəbəkəsindən və rahat daşıma çantasından ibarətdir. Yere bərkitməyə və ya divara bağlamağa heç bir ehtiyac yoxdur; istənilən düzgün səthdə (ot, qum, asfalt, zal döşəməsi) cəmi bir neçə dəqiqə ərzində rahatlıqla quraşdırılır.
+Qatlanan yüngül konstruksiyası sayəsində maşının yük yerində (baqajında) minimal yer tutur və istənilən istirahətə, kempinqə, piknikə və ya çimərliyə aparmaq üçün mükəmməldir. Ailəniz və dostlarınızla asudə vaxtınızı daha maraqlı, aktiv və idmanla dolu keçirmək üçün ən yaxşı seçimdir!
+Ölçülər və Qiymətlər:
+• 4 Metrlik Set: 90 AZN
+• 5 Metrlik Set: 100 AZN
+• 6 Metrlik Set: 120 AZN
+Məhsulun Əsas Xüsusiyyətləri:
+• Dəstə daxildir: Qatlanan metal ayaq karkası, dözümlü tor şəbəkəsi və xüsusi daşıma çantası
+• Ölçü seçimləri: 4 metr, 5 metr və 6 metr uzunluq
+• Quraşdırılma: Çox sadə və sürətli (əlavə alət tələb olunmur)
+• İstifadə sahələri: Badminton, Voleybol, Tennis, Tenisbol (Ayaq tenisi)
+• İstifadə yeri: Çimərlik, həyət, piknik, park, idman zalı, kempinq
+• Konstruksiya: Paslanmayan yüngül metal gövdə və dayanıqlı karkas
+Əlaqə və Sifariş:
+🚚 Çatdırılma: Bakı daxili sürətli çatdırılma və bütün bölgələrə göndəriş mövcuddur.
+Açar sözlər:
+badminton toru, voleybol toru, badminton seti, voleybol seti, portativ tor, badminton toru dayaqlı, voleybol şəbəkəsi, badminton şəbəkəsi, dayaqlı tor, canta ile voleybol toru, cimerlik voleybolu toru, heyet üçün voleybol toru, kempinq toru, ayaq tenisi toru, tenisbol toru, portable badminton net, portable volleyball net, idman toru, idman mallari, idman aletleri, vibe az, vibe az official, aciq hava oyunlari, piknik oyunlari, cimerlik oyunlari, voleybol toru qiymeti, badminton toru qiymeti, qatlanan voleybol toru, portable net, voleybol meshok, badminton set, sport net, idman avadanliqlari, bakida voleybol toru, ucuz voleybol toru, keyfiyyetli idman toru, voleybol toru satisi, badminton toru satisi, piknik seti, istirahet oyunlari...
+Davamını oxu
+№ 48257350
+09 Avqust 20268:X
+10:X
+10:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":72,"name":"Tenis toru","price":90,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257350","images":["/products/image_00125.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$Lb","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}]}]]}],"isPartial":"$@f","staleTime":"$8","varyParams":"$10"},{"rsc":["$","$1","c",{"children":[null,["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}]}]]}],"isPartial":"$@11","staleTime":"$8","varyParams":"$10"},{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],"$L12","$L13"],"$L14"]}],"isPartial":"$@15","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@16","rootVaryParams":null,"needsRuntimeRequest":"$@17"}
+18:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+19:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+6:null
+12:["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}]
+13:["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]
+14:["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L18",null,{"children":["$","$L19",null,{"children":["$","$Ld",null,{"parallelRouterKey":"children","template":["$","$Le",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]
+8:300
+17:true
+8:C
+16:0
+c:"$undefined"
+f:"$undefined"
+11:"$undefined"
+15:"$undefined"
+7:"$undefined"

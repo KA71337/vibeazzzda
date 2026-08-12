@@ -1,0 +1,1 @@
+import {Catalog} from '@/components/catalog';export default function Page(){return <section className="container py-12"><p className="text-xs font-bold uppercase tracking-widest text-gray-500">VIBE AZ</p><h1 className="mb-10 mt-3 text-4xl font-black sm:text-6xl">Kataloq</h1><Catalog/></section>}

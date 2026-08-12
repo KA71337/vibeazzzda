@@ -1,0 +1,55 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+a:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+3:Tb58,Bəli
+Qruzlu Pres Katoku (Ab Roller) - İki Təkərli | Avtomatik Yaylı Pres Təkəri
+📝 ELAN AÇIQLAMASI:
+💪 Qarın Əzələləri (Press) və Bütün Bədən Üçün Mükəmməl Məşq Aləti!
+Evdə və ya idman zalında qarın əzələlərini, qolları, çiyinləri və kürək əzələlərini effektiv şəkildə işlətmək üçün nəzərdə tutulmuş Qruzlu (Yaylı) Pres Katoku satışdadır!
+Daxili yay (qruz/prujin) mexanizmi sayəsində irəli gedərkən gərilir və geriyə rahatlıqla qaytarmağa kömək edir. Bu da bel zədələnmələrinin qarşısını alır, belə düşən yükü azaldır və hərəkəti daha düzgün, rahat icra etməyə imkan verir.
+✨ Məhsulun Üstünlükləri və Keyfiyyəti:
+Daxili Qruz / Yay Mexanizmi: Avtomatik geriqayıtma sistemi sayəsində həm yeni başlayanlar, həm də peşəkarlar üçün istifadəsi çox rahatdır.
+İki Təkərli Stabil Dizayn: İki geniş və dözümlü təkər sayəsində məşq zamanı yana əyilmir, maksimum balans və təhlükəsizlik təmin edir.
+Taymasız Erqonomik Tutacaqlar: Əlin tərləməsinin və sürüşməsinin qarşısını alan xüsusi rezillənmiş dəstəklər.
+Sakit və Sürüşməyən Təkərlər: Döşəməni cızmır və diyirlənərkən artıq səs-küy yaratmır.
+💰 Qiymət: 50 AZN
+🚚 Çatdırılma:
+İstənilən ünvana (Bakı daxilində və bütün rayonlara) sürətli və etibarlı çatdırılma var!
+📲 Sifariş və Əlaqə:
+Sifariş vermək və ya əlavə suallarınız üçün dərhal zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz.
+pres katoku, pres katoku qruzlu, katok qruzlu, prujinli katok, ab roller, ab wheel, pres tekeri, pres aleti, qarin ezelesi aleti, pres ucun katok, katok satisi, espander katok, espander satisi, iki tekerli katok, avto rebound ab roller, idman aleti, ev idman aletleri, idman mallari, pres mesq aleti, fitnes aletleri, 25 azn katok, vibe.az.official, vibe az, baki pres katoku, tap az pres katoku, tap az idman, unvana catdirilma, suretli catdirilma, catdirilma var, каток для пресса, колесо для пресса, роликовый тренажер, тренажер для пресса, ab roller wheel, fitness wheel, ab workout wheel, home gym equipment, ucuz pres katoku, keyfiyyetli pres tekeri, qruzlu pres tekeri, prujinli pres aleti, idman inventari, fitnes aksessuarlari, evde idman, qarin arigladan alet, qarin yaglarididici, araglatma aleti, oglan ucun idman hediyyesi, kisi ucun hediyye, idman hediyyesi, baki catdirilma, baki idman mallari, gimnastika tekeri, tekerli espander, el tutacagli katok, yaponiya katok, trenajor aleti, mini trenajor, kompakt idman aleti, pres cixartmaq ucun, qarin ezelesi, ciyn ezelesi, qol ezelesi, profesional ab roller, avtomatik qayidan katok, qruzlu ab roller, tap az katok, suvenir idman, idman brendi, vibe az official
+.
+.
+.
+Davamını oxu
+№ 48324583
+09 Avqust 20268:X
+12:X
+12:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":32,"name":"Qruzlu Pres Katoku (Ab Roller) iki təkərli","price":55,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324583","images":["/products/image_00056.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],"$Lb","$Lc","$Ld"]}]}]}],"$Le"]}],"isPartial":"$@f","staleTime":"$8","varyParams":null},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$12"},{"rsc":"$L13","isPartial":"$@14","staleTime":"$8","varyParams":"$12"},{"rsc":"$L15","isPartial":"$@16","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@17","rootVaryParams":null,"needsRuntimeRequest":"$@18"}
+19:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+1a:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1b:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1c:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1d:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+b:["$","link","2",{"rel":"icon","href":"/logo.jpeg"}]
+c:["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}]
+d:["$","$L19","4",{}]
+e:["$","meta",null,{"name":"next-size-adjust","content":""}]
+10:["$","$1","c",{"children":[null,["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}]}]]}]
+13:["$","$1","c",{"children":[null,["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}]}]]}]
+15:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1c",null,{"children":["$","$L1d",null,{"children":["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+18:true
+8:C
+17:0
+f:"$undefined"
+11:"$undefined"
+14:"$undefined"
+16:"$undefined"
+7:"$undefined"

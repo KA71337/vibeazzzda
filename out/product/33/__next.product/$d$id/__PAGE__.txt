@@ -1,0 +1,53 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+3:Tc4a,Bəli
+Peşəkar Masaüstü Futbol Masası (Foosball / Kicker) - Klasik Qara | Premium Oyun Masası
+📝 ELAN AÇIQLAMASI:
+⚽ Ev, Ofis və Oyun Klubları Üçün Premium Keyfiyyətli "Foosball" Masası!
+Həm uşaqların, həm də böyüklərin sevimli oyunu olan Peşəkar Masaüstü Futbol Masası (Foosball / Кикер) minimalist və lüks qara dizaynı ilə satışdadır!
+Evdə ailəvi əyləncə, ofislərdə işçilərin istirahət zonası, PlayStation / Oyun klubları, kafe və çay evləri üçün mükəmməl görünüşə və dözümlülüyə malikdir.
+✨ Məhsulun Üstünlükləri və Keyfiyyəti:
+Lüks və Modern Qara Dizayn: Şıq mat qara gövdəsi və xrom detalları ilə istənilən məkana xüsusi estetik gözəllik qatır.
+Möhkəm və Ağır Konstruksiya: Qalın dayanıqlı ayaqlar, alt metal dəstəklər və hündürlüyü tənzimlənən xrom altlıqlar sayəsində hətta en gərgin oyun anlarında belə masa yerdən tərpənmir.
+Sürətli və Rahat İdarəetmə: Paslanmayan poladdan işlənmiş xrom millər, əldən sürüşməyən tutacaqlar və davamlı oyunçu fiqurları ilə mükəmməl oyun həyəcanı yaşadır.
+Tənzimlənən Ayaqlar: Döşəmədəki əyrilikləri sıfırlamaq üçün ayaqların altında xüsusi tənzimləmə mexanizmi mövcuddur.
+Hesab Qeydiyyatı: Masanın hər iki tərəfində turnir tipli rahat hesablayıcılar yerləşdirilib.
+💰 Qiymət: 750 AZN
+🚚 Çatdırılma:
+İstənilən ünvana (Bakı daxilində və bütün rayonlara) sürətli və etibarlı çatdırılma var!
+📲 Sifariş və Əlaqə:
+Sifariş vermək və ya əlavə suallarınız üçün dərhal zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz.
+masaustu futbol, stolustu futbol, foosball, kicker, kiker, nastolniy futbol, oyun masasi, futbol masasi, qara futbol masasi, klasik kicker, luks oyun masasi, masaustu oyunlar, stolustu oyunlar, eylence masasi, ofis oyun masasi, ps club avadanligi, oyun klubu avadanligi, kafe oyunu, cay evi oyunu, pesekar masaustu futbol, kicker satisi, foosball satisi, masaustu futbol satisi, 750 azn, vibe.az.official, vibe az, baki masaustu futbol, tap az oyun masasi, tap az futbol masasi, unvana catdirilma, catdirilma var, настольный футбол, кикер, настольный футбол купить, кикер купить, футбольный стол, настольный футбол баку, подарок парню, подарок мужчине, офисная игра, настольные игры, foosball table, table football, kicker table, foosball table sale, gaming table, black foosball table, classic kicker, premium oyun masasi, ucuz masaustu futbol, keyfiyyetli futbol masasi, ad gunu hediyyesi, boyuk oyun masasi, idman oyunu, usaqlat ucun futbol, boyukler ucun futbol masasi, aktiv oyun, ev eylencesi, ofis eylencesi, xrom milli masa, dozumlu oyun masasi, baki catdirilma, suretli catdirilma, idman mallari, eylence mallari, stolustu futbol baki, xrom ayaqli kicker, turnir futbol masasi, heveskar futbol masasi, hediyyelik oyun masasi
+Peşəkar Masaüstü Futbol Masası..
+.
+Davamını oxu
+№ 48324550
+09 Avqust 20268:X
+f:X
+f:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":33,"name":"Masaüstü futbol","price":750,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324550","images":["/products/image_00057.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],"$La","$Lb"]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":"$Ld","isPartial":"$@e","staleTime":"$8","varyParams":"$f"},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$f"},{"rsc":"$L12","isPartial":"$@13","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+16:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+17:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+18:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+19:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1a:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1b:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+a:["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$L17","4",{}]]}]}]}]
+b:["$","meta",null,{"name":"next-size-adjust","content":""}]
+d:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+10:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+12:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1a",null,{"children":["$","$L1b",null,{"children":["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+15:true
+8:C
+14:0
+c:"$undefined"
+e:"$undefined"
+11:"$undefined"
+13:"$undefined"
+7:"$undefined"

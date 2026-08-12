@@ -1,0 +1,55 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+a:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+3:Tb37,Bəli
+Ovladınızın idmana olan marağını artırmaq, hərəkətliliyini, diqqətini və bədən koordinasiyasını inkişaf etdirmək üçün mükəmməl seçim! Dünyada tanınan **ODEA Sports** brendinin xüsusi olaraq uşaqlar və gənclər üçün hazırladığı **Jaguar 23 (Junior Series)** tenis raketkası dəsti artıq satışdadır.
+Bu raketka uşaq anatomiyasına uyğun olaraq xüsusi yüngül və davamlı materiallardan hazırlanmışdır. Bu sayədə balaca idmançıların biləkləri və qolları yorulmur, ilk dəfədən topa rahat vuruşlar edə bilirlər. Ələ tam oturan xüsusi örtüklü tutacaq (grip) hissəsi məşq zamanı əlin sürüşməsinin qarşısını alır və vuruşlara maksimum nəzarət imkanı yaradır. Canlı və dinamik rəng dizaynı isə uşaqların idmana olan həvəsini ikiqat artıracaq!
+Dəstə raketka ilə yanaşı, onu çirklənmədən, cızılmaqdan və zərbələrdən qoruyan, çiynə salına bilən kəmərli orijinal **ODEA** daşıma çantası da daxildir. Övladınız raketkasını məşqə, parka, məktəbə və ya həyətə özü ilə çox rahatlıqla daşıya bilər. Həm tenis dərslərinə başlayanlar, həm də həyətdə aktiv istirahət etmək istəyən uşaqlar üçün dəyərli və keyfiyyətli hədiyyədir.
+**Qiymət:** **45 AZN**
+**Məhsulun Əsas Xüsusiyyətləri:**
+• **Brend və Model:** ODEA Sports — Jaguar 23 (Junior Series)
+• **Təyinatı:** Uşaqlar və yeniyetmələr üçün tenisə başlanğıc, profesional məşqlər və həvəskar oyunlar
+• **Dəstə daxildir:** 1 ədəd yüksək keyfiyyətli uşaq tenis raketkası və 1 ədəd çiynə asılan orijinal fermuarlı qoruyucu çanta
+• **Erqonomik Konstruksiya:** Yüngül gövdə yapısı sayəsində rahat manevr imkanı və biləklərin qorunması
+• **Tutacaq:** Xüsusi örtüklü, əldən sürüşməyən yumşaq dəstək (grip)
+• **Dizayn:** Şıq, müasir və canlı rəng çalarları
+**Əlaqə və Sifariş:**
+🚚 **Çatdırılma:** Bakı daxili sürətli çatdırılma və bütün bölgələrə göndəriş mövcuddur.
+**Açar sözlər:**
+tenis raketkasi, usaq tenis raketkasi, odea tennis, jaguar 23, odea sports, tenis desti, usaq idman mallari, boyuk tenis raketkasi, tenis cantasi, usaq ucun raketka, tenis oyunu, kort tenisi, tennis racket, junior tennis racket, odea raketka, idman aletleri, usaq idman aletleri, tenis topu, kort oyunu, idman mallari baki, vibe az, vibe az official, uşaq tenis raketkası, tenis dəsti, çanta ilə tenis raketkası, profesional tenis, həvəskar tenis, uşaq idmanı, tennis bag, odea jaguar, raketka satisi, tenis alətləri, orijinal tenis raketkasi, keyfiyyetli tenis raketkasi, ucuz tenis raketkasi, canta ile raketka, idman mallari satisi, tennis kit, junior series tennis, idman avadanliqlari.......
+.
+.
+.
+.
+.
+Davamını oxu
+№ 48257339
+09 Avqust 20268:X
+11:X
+11:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":75,"name":"Tenis raketkasi ODEA","price":50,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257339","images":["/products/image_00128.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],"$Lb","$Lc"]}]}]}],"$Ld"]}],"isPartial":"$@e","staleTime":"$8","varyParams":null},{"rsc":"$Lf","isPartial":"$@10","staleTime":"$8","varyParams":"$11"},{"rsc":"$L12","isPartial":"$@13","staleTime":"$8","varyParams":"$11"},{"rsc":"$L14","isPartial":"$@15","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@16","rootVaryParams":null,"needsRuntimeRequest":"$@17"}
+18:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+19:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1a:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1b:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1c:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+b:["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}]
+c:["$","$L18","4",{}]
+d:["$","meta",null,{"name":"next-size-adjust","content":""}]
+f:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+12:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+14:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1b",null,{"children":["$","$L1c",null,{"children":["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+17:true
+8:C
+16:0
+e:"$undefined"
+10:"$undefined"
+13:"$undefined"
+15:"$undefined"
+7:"$undefined"

@@ -1,0 +1,42 @@
+1:"$Sreact.fragment"
+2:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+3:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+4:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+5:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+7:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+b:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+d:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+f:I[68027,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default",1]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+a:X
+0:{"P":null,"c":["","product","36",""],"q":"","i":false,"f":[[["",{"children":["product",{"children":[["id","36","d",[]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L2",null,{"children":["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L6",[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true,"nonce":"$undefined"}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,null]},null,false,"$a"]},null,false,"$a"]},null,false,null],["$","$1","h",{"children":[null,["$","$Lb",null,{"children":"$Lc"}],["$","div",null,{"hidden":true,"children":["$","$Ld",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$Le"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$f",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"1263PTvf0CwZKMyQbm5rT"}
+10:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+a:C
+11:Tb24,Bəli
+Qızıl Butsi Mükafatı (Golden Boot) - Qızılı Suvenir | Bombardir Mükafatı
+📝 ELAN AÇIQLAMASI:
+🏆 Futbolun Ən Yaxşı Qolçuları Üçün Möhtəşəm "Qızıl Butsi" Mükafatı!
+Mövsümün və turnirlərin ən çox qol vuran hücumçusuna təqdim edilən əfsanəvi Qızıl Butsinin (Golden Boot) premium keyfiyyətli qızılı replikası satışdadır!
+Futbol turnirlərində "Bombardir / Ən Yaxşı Qolçu" nominasiyası üzrə mükafatlandırma, masaüstü estetik dekorasiya və ya futbol həvəskarı dostlarınıza unudulmaz hədiyyə etmək üçün mükəmməl seçimdir.
+✨ Məhsulun Üstünlükləri və Keyfiyyəti:
+Zəngin Qızılı Örtük: Yüksək parlaqlığa malikdir; zamanla rəngi solmur, soyulmur və öz gözəlliyini qoruyub saxlayır.
+Estetik Qara Altlıq: Şık və möhkəm qara masaüstü stendi üzərində yerləşdirilib, masada çox lüks və əzəmətli duruşa malikdir.
+İncə Detallaşdırma: Butsinin tikişləri, bağ bəndləri və alt dişlərinə qədər orijinal mükafatın dizaynına tam uyğun işlənmişdir.
+💰 Qiymət: 60 AZN
+🚚 Çatdırılma:
+İstənilən ünvana (Bakı daxilində və bütün rayonlara) sürətli və etibarlı çatdırılma var!
+📲 Sifariş və Əlaqə:
+Sifariş vermək və ya əlavə suallarınız üçün dərhal zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz
+qizil butsi, qizil butsi kuboku, golden boot trophy, golden shoe, qizil butsa, bombardir mukafati, en yaxsi qolcu mukafati, futbol suveniri, qizil butsi satisi, golden boot replika, 60 azn qizil butsi, qizili butsi, futbol atributlari, futbol aksesuari, masaustu qizil butsi, stolustu suvenir, ofis dekoru, hediyye futbol, oglan ucun hediyye, kisi ucun hediyye, idman hediyyesi, fanat hediyyesi, azarkes hediyyesi, turnir kuboku, yaris kuboku, bombardir kuboku, vibe.az.official, vibe az, baki qizil butsi satisi, tap az qizil butsi, tap az futbol, unvana catdirilma, suretli catdirilma, catdirilma var, золотая бутса, трофей золотая бутса, кубок золотая бутса, золотая бутса реплика, подарок футболисту, сувенир золотая бутса, лучший бомбардир кубок, месси золотая бутса, роналду золотая бутса, golden boot replica, golden shoe trophy, football trophy, top scorer trophy, premium qizil butsi, ucuz qizil butsi, keyfiyyetli suvenir, ad gunu hediyyesi, ozel hediyye, futbol mukafati, cempionluq suveniri, real madrid suvenir, barcelona suvenir, futbol aksessuari, idman mallari, suvenir satisi, hediyyelik butsi, parlak qizil butsi, qizili suvenir, futbol azarkesi, futbol oyunu, mini qizil boot, baki catdirilma, qolcu mukafati, turnir suveniri, futbol hediyyesi, cempion kubok
+.
+.
+.
+Davamını oxu
+№ 48324461
+09 Avqust 20266:["$","$L10",null,{"p":{"id":36,"name":"Qızıl buts mükafatı","price":59,"newPrice":null,"description":"$11","link":"https://tap.az/elanlar/ev-ve-bag-ucun/dekor-interyer/48324461","images":["/products/image_00062.jpg"]}}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+12:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+9:null
+e:[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$L12","4",{}]]

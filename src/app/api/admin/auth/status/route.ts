@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server';import {currentSession,noStore} from '@/server/security';import {getConfig} from '@/server/config';export const runtime='nodejs';export async function GET(){const s=await currentSession();return NextResponse.json({authenticated:!!s,configured:!!getConfig(),csrf:s?.csrf},{headers:noStore})}

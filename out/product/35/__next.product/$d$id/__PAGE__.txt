@@ -1,0 +1,55 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+a:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+3:Tb7e,Bəli
+Peşəkar Güləş Xalçası (Tatami Mat) - 6x6m, 8x8m, 10x10m | Zal Üçün
+📝 ELAN AÇIQLAMASI:
+🤼‍♂️ İdman Zalları və Məşq Kompleksləri Üçün Peşəkar Güləş Xalçası!
+Sərbəst güləş, yunan-roma güləşi, cüdo, sambo, MMA və digər əlbəyaxa döyüş idman növləri üçün nəzərdə tutulmuş yüksək keyfiyyətli Güləş Xalçaları satışdadır!
+Həm peşəkar idman zallarının təchizatı, həm də yarış və məşq proseslərinin təhlükəsiz təşkili üçün tam standartlara uyğun seçimdir.
+✨ Məhsulun Üstünlükləri və Keyfiyyəti:
+Yüksək Zərbəudma Vəsfi (Amortizasiya): Yıxılmalar zamanı zərbəni maksimum dərəcədə yumşaldır, idmançıların zədələnmə riskini minimuma endirir.
+Davamlı və Suya Dözümlü Örtük: Yüksək sıxlıqlı, cırılmaya, sürtünməyə qarşı dözümlü materialdan hazırlanıb. Təmizlənməsi və dezinfeksiya edilməsi çox rahatdır.
+Standart Zonalı Dizayn: Beynəlxalq yarış standartlarına uyğun parlaq göy, qırmızı və sarı mərkəzi zonalarla işlənmişdir, vaxt geçdikcə rəngi solmur.
+Sürüşməyən Səth: İdmançıların rahat və təhlükəsiz hərəkət etməsini təmin edir.
+📏 Ölçülər və Qiymətlər:
+6 × 6 metr — 950 AZN
+8 × 8 metr — 1250 AZN
+10 × 10 metr — 1650 AZN
+🚚 Çatdırılma:
+İstənilən ünvana (Bakı daxilində və bütün rayonlara) sürətli və etibarlı çatdırılma var!
+📲 Sifariş və Əlaqə:
+Sifariş vermək və ya əlavə suallarınız üçün dərhal zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz.
+gules xalcasi, gules xalcasi satisi, tatami mat, idman xalcasi, zal xalcasi, profesional gules xalcasi, gules mat, tatami satisi, mma xalcasi, cudo xalcasi, sambo xalcasi, serbest gules xalcasi, yunan roma gules xalcasi, 6x6 gules xalcasi, 8x8 gules xalcasi, 10x10 gules xalcasi, idman zali avadanligi, zal avadanliqlari, idman mat, tatami dovseme, doyus xalcasi, gules ortuyu, idman ortuyu, pvh xalca, amortizasiyali xalca, vibe.az.official, vibe az, baki gules xalcasi, tap az idman, tap az gules, unvana catdirilma, catdirilma ile, idman mallari, zal mallari, борцовский ковер, ковер для борьбы, татами, спортивный ковер, ковер для самбо, ковер для дзюдо, борцовский ковер купить, ковер 6х6, ковер 8х8, ковер 10х10, борцовский ковер баку, wrestling mat, wrestling mat sale, tatami mat sale, sports mat, gym mat, combat sports mat, 950 azn, 1250 azn, 1650 azn, keyfiyyetli idman xalcasi, dozumlu gules xalcasi, elbeyaxa doyus ortuyu, profesional tatami, idman avadanligi satisi, zallar ucuc xalca, mesq xalcasi, trenajor zali xalcasi, idman kompleksi, baki catdirilma, suretli catdirilma, ucuz gules xalcasi, keyfiyyetli gules mat, gules ringi, doyus zali...
+Davamını oxu
+№ 48324503
+09 Avqust 20268:X
+12:X
+12:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":35,"name":"Peşəkar güləş xalçası","price":950,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324503","images":["/products/image_00059.jpg","/products/image_00060.jpg","/products/image_00061.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],"$Lb","$Lc","$Ld"]}]}]}],"$Le"]}],"isPartial":"$@f","staleTime":"$8","varyParams":null},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$12"},{"rsc":"$L13","isPartial":"$@14","staleTime":"$8","varyParams":"$12"},{"rsc":"$L15","isPartial":"$@16","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@17","rootVaryParams":null,"needsRuntimeRequest":"$@18"}
+19:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+1a:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1b:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1c:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1d:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+b:["$","link","2",{"rel":"icon","href":"/logo.jpeg"}]
+c:["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}]
+d:["$","$L19","4",{}]
+e:["$","meta",null,{"name":"next-size-adjust","content":""}]
+10:["$","$1","c",{"children":[null,["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}]}]]}]
+13:["$","$1","c",{"children":[null,["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}]}]]}]
+15:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1c",null,{"children":["$","$L1d",null,{"children":["$","$L1a",null,{"parallelRouterKey":"children","template":["$","$L1b",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+18:true
+8:C
+17:0
+f:"$undefined"
+11:"$undefined"
+14:"$undefined"
+16:"$undefined"
+7:"$undefined"

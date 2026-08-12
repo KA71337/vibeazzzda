@@ -1,0 +1,50 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+3:Tcff,Bəli
+Ev şəraitində rahat idman etmək, qaməti düzəltmək, bel ağrılarını azaltmaq və əzələləri gücləndirmək üçün mükəmməl teleskopik turnik! Qapı çərçivəsinə və ya iki divar arasına deşmədən, divarı zədələmədən asanlıqla bərkidilir.
+Əsas Özəllikləri:
+Teleskopik (Uzanan) Sistem: Burularaq açılır və qapı arasına möhkəm sıxılaraq oturan xüsusi mexanizmə malikdir.
+Qapını Zədələmir: Deşmək tələb olunmur, kənarlarındakı xüsusi rezin başlaşmalar sayəsində divarı və ya qapı çərçivəsini cızmır və sürüşmür.
+Yumşaq Süngər Tutacaqlar: Əllərin qabar olmasının qarşısını alır, rahat tutuş və sürüşməyən səth təmin edir.
+Möhkəm və Dözümlü: Xromlanmış polad materialdan hazırlanıb, yüksək çəkiyə dözümlüdür.
+Ölçülər və Qiymətlər:
+📏 62 sm – 1.00 metr: 29 AZN
+📏 83 sm – 1.30 metr: 34 AZN
+📏 1.00 metr – 1.50 metr: 39 AZN
+✨ Vəziyyəti: Yeni
+🚀 Çatdırılma:
+Hər yerə PULSUZ çatdırılma!
+Sifariş və ətraflı məlumat üçün elandakı nömrəyə zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz.
+Açar sözlər:
+turnik, qapı turniki, qapi turniki, teleskopik turnik, tenzimlenen turnik, tənzimlənən turnik, ev turniki, divar turniki, qapı arası turnik, qapi arasi turnik, idman turniki, turnik demiri, turnik dəmiri, turnik çubuğu, turnik cubugu, 62 sm turnik, 83 sm turnik, 100 sm turnik, 150 sm turnik, 1 metr turnik, 1.30 metr turnik, 1.50 metr turnik, 29 azn turnik, 34 azn turnik, 39 azn turnik, evdə idman, evde idman, idman alətləri, idman aletleri, idman avadanlıqları, idman avadanliqlari, turnik aleti, turnik aləti, brus turnik, turnik brus, turnik aparatı, turnik aparati, turnik aparati baki, turnik baki, turnik bakida, turnik satisi, turnik qiymeti, ucuz turnik, keyfiyyətli turnik, teze turnik, yeni turnik, qapı arakəsmə turniki, deşilməyən turnik, desilmeyen turnik, rezinli turnik, sungerli turnik, süngərli turnik, yumsaq turnik, rahat turnik, idman mallari, idman malı, idman dunyasi, idman alemi, turnik 62-100, turnik 83-130, turnik 100-150, турник, турник для дома, распорный турник, турник в проем, дверной турник, раздвижной турник, турник на дверь, домашний турник, турник баку, купить турник баку, турник регулируемый, спортивный турник, турник 62 см, турник 83 см, турник 100 см, турник 150 см, спортивные товары, товары для спорта, домашний спорт, турник не требующий сверления, турник с мягкими ручками, door pull up bar, pull up bar, chin up bar, doorway pull up bar, adjustable pull up bar, home gym pull up bar, telescopic pull up bar, pullup bar baku, turnik pulsuz catdirilma, pulsuz çatdırılma, vibe az, vibe.az.official, tap.az turnik, tapaz idman aletleri, turnik qiymətləri, turnik almaq, turik, trunik, qapi turnik, turnik deşmədən, turnik brus pres, turnik desti, ev şəraitində idman, ev seraitinde idman, qamət düzəldən, qamet duzeldici, onurğa açan, bel
+Davamını oxu
+№ 48394217
+11 Avqust 20268:X
+f:X
+f:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":6,"name":"Turnik","price":29,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48394217","images":["/products/image_00014.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],"$La","$Lb"]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":"$Ld","isPartial":"$@e","staleTime":"$8","varyParams":"$f"},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$f"},{"rsc":"$L12","isPartial":"$@13","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+16:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+17:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+18:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+19:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1a:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1b:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+a:["$","div",null,{"hidden":true,"children":["$","$L16",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$L17","4",{}]]}]}]}]
+b:["$","meta",null,{"name":"next-size-adjust","content":""}]
+d:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+10:["$","$1","c",{"children":[null,["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}]}]]}]
+12:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1a",null,{"children":["$","$L1b",null,{"children":["$","$L18",null,{"parallelRouterKey":"children","template":["$","$L19",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+15:true
+8:C
+14:0
+c:"$undefined"
+e:"$undefined"
+11:"$undefined"
+13:"$undefined"
+7:"$undefined"

@@ -1,0 +1,47 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+4:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+a:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+b:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+3:Tab7,Bəli
+Kortda tam hakimiyyət və güclü vuruşlar etmək istəyənlər üçün mükəmməl seçim! Dünyanın Nömrə 1 tenis brendlərindən olan **Wilson**-un əfsanəvi **BLX** seriyasına aid peşəkar böyük tenis raketkası artıq satışdadır.
+Bu raketka həm peşəkar oyunçular, həm də kortda öz oyununu növbəti səviyyəyə qaldırmaq istəyən həvəskarlar üçün xüsusi olaraq layihələndirilib. Xüsusi BLX texnologiyalı möhkəm və yüngül gövdə yapısı vuruş zamanı yaranan arzuolunmaz titrəyişləri (vibrasiyanı) minimuma endirir, topa vurulan hər bir zərbənin dəqiqliyini və gücünü maksimuma çatdırır. Sürüşməyən professional tutacaq örtüyü (grip) uzunmüddətli və gərgin oyunlar zamanı belə əldə tam rahatlıq təmin edir.
+Dəstə raketka ilə yanaşı, onu tozdan, nəmdən və zərbələrdən tam qoruyan, üzərində tənzimlənən çiyin kəməri olan orijinal **Wilson BLX** fermuarlı daşıma çantası daxildir. Kort məşqlərinə, turnirlərə və ya aktiv istirahətə gedərkən özünüzlə rahatlıqla daşıya bilərsiniz. Həm özünüz üçün mükəmməl bir idman aləti, həm də tenis həvəskarları üçün dəyərli hədiyyə seçimidir!
+**Qiymət:** **55 AZN**
+**Məhsulun Əsas Xüsusiyyətləri:**
+• **Brend və Model:** Wilson BLX Series
+• **Təyinatı:** Kort tenisi, professional məşqlər, turnirlər və həvəskar oyunlar
+• **Dəstə daxildir:** 1 ədəd Wilson BLX peşəkar tenis raketkası və 1 ədəd orijinal fermuarlı Wilson daşıma çantası
+• **Konstruksiya:** Yüksək dözümlü və balanslaşdırılmış yüngül gövdə
+• **Üstünlüyü:** Minimum vibrasiya, yüksək manevr qabiliyyəti və dəqiq zərbə nəzarəti
+• **Tutacaq:** Əldən sürüşməyən, professional tərləməəleyhinə grip örtüyü
+**Əlaqə və Sifariş:**
+🚚 **Çatdırılma:** Bakı daxili sürətli çatdırılma və bütün bölgələrə göndəriş mövcuddur.
+**Açar sözlər:**
+wilson tenis raketkasi, wilson blx, wilson raketka, boyuk tenis raketkasi, kort tenisi, tenis raketkasi, pesekar tenis raketkasi, tenis desti, wilson tennis, tenis cantasi, canta ile tenis raketkasi, tenis oyunu, tennis racket, wilson blx racket, tennis bag, idman mallari, idman aletleri, idman avadanliqlari, kort oyunu, tenis topu, vibe az, vibe az official, idman mallari baki, tenis raketkasi satisi, orijinal wilson, roger federer raketka, wilson sport, keyfiyyetli tenis raketkasi, boyuk tenis desti, profesional raketka, tenis alətləri, kort raketkası, ucuz tenis raketkasi, idman mallari satisi, tenis avadanligi, raketka canta ile, wilson canta, tennis kit, pro tennis racket, wilson bakı...
+Davamını oxu
+№ 48257342
+09 Avqust 20268:X
+f:X
+f:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":74,"name":"Tenis raketkası WİLSON","price":55,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257342","images":["/products/image_00127.jpg"]}}],[["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$Lb","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":"$@c","staleTime":"$8","varyParams":null},{"rsc":"$Ld","isPartial":"$@e","staleTime":"$8","varyParams":"$f"},{"rsc":"$L10","isPartial":"$@11","staleTime":"$8","varyParams":"$f"},{"rsc":"$L12","isPartial":"$@13","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@14","rootVaryParams":null,"needsRuntimeRequest":"$@15"}
+16:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+17:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+18:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+19:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+6:null
+d:["$","$1","c",{"children":[null,["$","$L16",null,{"parallelRouterKey":"children","template":["$","$L17",null,{}]}]]}]
+10:["$","$1","c",{"children":[null,["$","$L16",null,{"parallelRouterKey":"children","template":["$","$L17",null,{}]}]]}]
+12:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L18",null,{"children":["$","$L19",null,{"children":["$","$L16",null,{"parallelRouterKey":"children","template":["$","$L17",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+8:300
+15:true
+8:C
+14:0
+c:"$undefined"
+e:"$undefined"
+11:"$undefined"
+13:"$undefined"
+7:"$undefined"

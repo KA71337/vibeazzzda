@@ -1,0 +1,52 @@
+1:"$Sreact.fragment"
+2:I[15387,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js","/_next/static/chunks/41nw1y6qauo7o.js"],"ProductDetail"]
+3:Tdf8,Bəli
+Həm gündəlik dəbli krossovka, həm də tamfəal 4 təkərli rolik (Quad Skate)! Əsl sürət və əyləncə həvəskarları üçün mükəmməl seçimdir.
+✨ Əsas Özəllikləri:Rolik Krasovka
+4 Təkərli (Quad) Mexanizm: Klassik roliklər kimi 4 təkəri sayəsində maksimum tarazlıq və təhlükəsiz sürüş təmin edir. Təkərləri gizlədərək rahat krossovka kimi də geyinmək mümkündür.
+Rəngarəng LED İşıqlar: Altlığındakı parlaq LED işıqlar axşam gəzintilərində xüsusi bərq vurur.
+Klassik & Dəbli Dizayn: Ağ-qara rəng kombinasiyası, cırt-cırtlı (velcro) və qaytanlı bağlama sistemi ilə ayaqda çox rahat və möhkəm durur.
+Davamlı Konstruksiya: Yüksək keyfiyyətli krossovka materialı və möhkəm təkər şassisi uzunömürlü istifadə üçün nəzərdə tutulub.
+📊 Məhsul Haqqında:
+📏 Ölçülər (Razmerlər): 34 - 41 arası mövcuddur. (Həm uşaqlar, həm də gənclər üçün uyğundur).
+🎨 Rəng: Qara-Ağ (Black & White).
+✨ Vəziyyəti: Təzə / Yeni.
+💸 Qiymət: 65 AZN
+🚚 Çatdırılma:
+Hər yerə PULSUZ çatdırılma!
+Sifariş və ətraflı məlumat üçün elandakı nömrəyə zəng edə və ya WhatsApp vasitəsilə yaza bilərsiniz.
+🔑 Açar Sözlər (SEO üçün 200 Söz):
+Açar sözlər:
+4 təkərli krossovka, 4 tekerli krossovka, 4 təkərli rolik, 4 tekerli rolik, quad skate, quad rolik, işıqlı təkərli krossovka, isigli tekerli krossovka, led krossovka, led işıqlı ayaqqabı, isigli ayaqqabi, rolikli krossovka, tekerli krossovka, rolikli ayaqqabı, rolikli krasovka, tekerli krasovka, uşaq krossovkası, usaq krossovkasi, gənc krossovkası, genc krossovkasi, qız krossovkası, qiz krossovkasi, oğlan krossovkası, oglan krossovkasi, qara ağ krossovka, qara ag krossovka, black white sneakers, rolik, roliklər, rolikler, heelys, roller shoes, led roller skates, cırt cırtlı krossovka, licuklu krasovka, təkərli ayaqqabı, tekerli ayaqqabi, 2 si 1 de krossovka, 4 rolikli, dörd təkərli, dord tekerli, gizli təkərli, gizli tekerli, uşaq hədiyyəsi, usaq hediyyesi, ad günü hədiyyəsi, adgunu hediyyesi, ucuz krossovka, keyfiyyətli uşaq ayaqqabısı, yeni uşaq ayaqqabısı, təzə krossovka, 34 razmer, 35 razmer, 36 razmer, 37 razmer, 38 razmer, 39 razmer, 40 razmer, 41 razmer, 34 ölçü, 35 ölçü, 36 ölçü, 37 ölçü, 38 ölçü, 39 ölçü, 40 ölçü, 41 ölçü, 4 колесные ролики, роликовые кроссовки, светящиеся кроссовки, кроссовки на роликах, детские кроссовки, ролики детские, обувь для детей, роликовая обувь, кроссовки с колесиками, кроссовки на колесах, ролики 4 колеса, квады, ролики квады, черно белые кроссовки, детская обувь баку, uşaq ayaqqabıları Bakı, pulsuz çatdırılma, pulsuz catdirilma, vibe az, vibe.az.official, tap.az ayaqqabı, brend krossovka, orijinal uşaq ayaqqabısı, rahat ayaqqabı, ortopedik ayaqqabı, idman ayaqqabısı, uşaq idman ayaqqabısı, skeyt ayaqqabı, yay ayaqqabısı, payız ayaqqabısı, məktəb ayaqqabısı, mekteb ayaqqabisi, əyləncəli krossovka, işıqlı krossovka, isigli krasovka, batut, skuter, samokat, velosiped, uşaq əyləncəsi, usaq eylencesi, uşaq geyimləri, usaq geyimleri, qız geyimi, oğlan geyimi, dəbli krossovka, dəbli uşaq ayaqqabısı, trend krossovka, viral krossovka,
+Davamını oxu
+№ 48394203
+11 Avqust 20267:X
+c:X
+c:C
+0:{"buildId":"1263PTvf0CwZKMyQbm5rT","data":[{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"p":{"id":8,"name":"İdman ayaqqabısı rollikli","price":120,"newPrice":null,"description":"$3","link":"https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48394203","images":["/products/image_00017.jpg","/products/image_00018.jpg"]}}],["$L4"],"$L5"]}],"isPartial":"$@6","staleTime":"$7","varyParams":null},{"rsc":"$L8","isPartial":"$@9","staleTime":"$7","varyParams":null},{"rsc":"$La","isPartial":"$@b","staleTime":"$7","varyParams":"$c"},{"rsc":"$Ld","isPartial":"$@e","staleTime":"$7","varyParams":"$c"},{"rsc":"$Lf","isPartial":"$@10","staleTime":"$7","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@11","rootVaryParams":null,"needsRuntimeRequest":"$@12"}
+13:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"OutletBoundary"]
+14:"$Sreact.suspense"
+16:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"ViewportBoundary"]
+17:I[97367,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"MetadataBoundary"]
+18:I[27201,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"IconMark"]
+19:I[39756,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1a:I[37457,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"default"]
+1b:I[24831,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"StoreProvider"]
+1c:I[33204,["/_next/static/chunks/0wiphfpbhork7.js","/_next/static/chunks/0-vnsrc1siiub.js"],"Shell"]
+:HL["/_next/static/chunks/3bni1whxx0n_r.css","style"]
+4:["$","script","script-0",{"src":"/_next/static/chunks/41nw1y6qauo7o.js","async":true}]
+5:["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]
+8:["$","$1","h",{"children":[null,["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$14",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"VIBE AZ — Keyfiyyətli məhsullar"}],["$","meta","1",{"name":"description","content":"Seçilmiş idman və əyləncə məhsulları"}],["$","link","2",{"rel":"icon","href":"/logo.jpeg"}],["$","link","3",{"rel":"apple-touch-icon","href":"/logo.jpeg"}],["$","$L18","4",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+a:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+d:["$","$1","c",{"children":[null,["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}]}]]}]
+f:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bni1whxx0n_r.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0wiphfpbhork7.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/0-vnsrc1siiub.js","async":true}]],["$","html",null,{"lang":"az","children":["$","body",null,{"className":"inter_5901b7c6-module__ec5Qua__variable","children":["$","$L1b",null,{"children":["$","$L1c",null,{"children":["$","$L19",null,{"parallelRouterKey":"children","template":["$","$L1a",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]}]}]]}]
+15:null
+12:true
+7:300
+7:C
+11:0
+9:"$undefined"
+b:"$undefined"
+e:"$undefined"
+10:"$undefined"
+6:"$undefined"
