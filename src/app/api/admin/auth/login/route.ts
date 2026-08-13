@@ -1,2 +1,20 @@
-import {NextRequest,NextResponse} from 'next/server';import {getConfig} from '@/server/config';import {clientKey,newSession,noStore,safeEqual,setSession,throttle} from '@/server/security';
-export const runtime='nodejs';export async function POST(req:NextRequest){const key=clientKey(req);if(throttle('login:'+key,6,300000))return NextResponse.json({error:'Слишком много попыток'},{status:429,headers:noStore});const c=getConfig();if(!c)return NextResponse.json({error:'Админ-доступ не настроен'},{status:503,headers:noStore});const {password}=await req.json().catch(()=>({}));if(typeof password!=='string'||!safeEqual(password,c.adminPassword))return NextResponse.json({error:'Неверный пароль'},{status:401,headers:noStore});const {token,data}=newSession(c.sessionSecret),res=NextResponse.json({authenticated:true,csrf:data.csrf},{headers:noStore});setSession(res,token);return res}
+import {NextRequest, NextResponse} from 'next/server';
+import {AUTH_ENV, getAuthConfig, missingEnv} from '@/server/config';
+import {clientKey, newSession, noStore, safeEqual, setSession, throttle} from '@/server/security';
+
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+export async function POST(req: NextRequest) {
+  const key = clientKey(req);
+  if (throttle('login:' + key, 6, 300000)) return NextResponse.json({error: 'Слишком много попыток'}, {status: 429, headers: noStore});
+  // Sign-in requires only ADMIN_PASSWORD and SESSION_SECRET.
+  const c = getAuthConfig();
+  if (!c) return NextResponse.json({error: 'Админ-доступ не настроен: ' + missingEnv(AUTH_ENV).join(', ')}, {status: 503, headers: noStore});
+  const {password} = await req.json().catch(() => ({}));
+  if (typeof password !== 'string' || !safeEqual(password, c.adminPassword)) return NextResponse.json({error: 'Неверный пароль'}, {status: 401, headers: noStore});
+  const {token, data} = newSession(c.sessionSecret);
+  const res = NextResponse.json({authenticated: true, csrf: data.csrf}, {headers: noStore});
+  setSession(res, token);
+  return res;
+}
