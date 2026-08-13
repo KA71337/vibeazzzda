@@ -1,5 +1,7 @@
 # VIBE AZ
 
+Repository: **vibeazzz**.
+
 Next.js storefront with a hidden, server-rendered catalog administrator at `/admin`. The public design, routes, phone flows and `/logo.jpeg` remain unchanged.
 
 ## Local setup
