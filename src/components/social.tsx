@@ -2,6 +2,7 @@
 // strict CSP without remote img-src, so these must be inline SVG.
 export const WHATSAPP_URL = 'https://wa.me/994998083080';
 export const TIKTOK_URL = 'https://www.tiktok.com/@vibe.az.official8';
+export const INSTAGRAM_URL = 'https://www.instagram.com/vibe.az.official';
 
 type IconProps = {size?: number; className?: string};
 
@@ -18,6 +19,16 @@ export function TikTokIcon({size = 20, className}: IconProps) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" className={className}>
       <path d="M16.6 5.82A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5 2.59 2.59 0 0 1 0-5.18c.27 0 .53.04.77.12v-3.2a5.7 5.7 0 0 0-.77-.05A5.72 5.72 0 0 0 4.14 15.3 5.72 5.72 0 0 0 9.86 21a5.72 5.72 0 0 0 5.72-5.72V9.01a7.35 7.35 0 0 0 4.28 1.37V7.29a4.29 4.29 0 0 1-3.26-1.47z" />
+    </svg>
+  );
+}
+
+export function InstagramIcon({size = 20, className}: IconProps) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false" className={className}>
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none" />
     </svg>
   );
 }
