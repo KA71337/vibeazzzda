@@ -1366,17 +1366,5 @@
       "/products/image_00194.jpg"
     ],
     "category": "diger"
-  },
-  {
-    "id": 110,
-    "name": "test",
-    "price": 0,
-    "newPrice": null,
-    "description": "",
-    "link": "",
-    "images": [
-      "/products/admin/1786715858820-0-d7fcef95-916c-4e13-8658-92a412ee6aa9.png"
-    ],
-    "category": "basketbol"
   }
 ]
