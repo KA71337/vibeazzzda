@@ -108,18 +108,6 @@
     "category": "rolik"
   },
   {
-    "id": 10,
-    "name": "test",
-    "price": 23,
-    "newPrice": null,
-    "description": "",
-    "link": "",
-    "images": [
-      "/products/admin/1786715838337-0-5b40b820-41c8-4291-936c-49e6e2a6fa5a.png"
-    ],
-    "category": "skuter"
-  },
-  {
     "id": 11,
     "name": "Bilyard Kiyi (145 sm / 160 sm)",
     "price": 45,
