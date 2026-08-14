@@ -17,7 +17,8 @@
       "/products/image_00008.jpg",
       "/products/image_00009.jpg",
       "/products/image_00010.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 3,
@@ -28,7 +29,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48249951",
     "images": [
       "/products/image_00011.jpg"
-    ]
+    ],
+    "category": "skuter"
   },
   {
     "id": 4,
@@ -39,7 +41,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48394223",
     "images": [
       "/products/image_00012.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 5,
@@ -50,7 +53,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48394220",
     "images": [
       "/products/image_00013.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 6,
@@ -61,7 +65,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48394217",
     "images": [
       "/products/image_00014.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 7,
@@ -73,7 +78,8 @@
     "images": [
       "/products/image_00015.jpg",
       "/products/image_00016.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 8,
@@ -85,7 +91,8 @@
     "images": [
       "/products/image_00017.jpg",
       "/products/image_00018.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 9,
@@ -97,7 +104,8 @@
     "images": [
       "/products/image_00019.jpg",
       "/products/image_00020.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 10,
@@ -110,7 +118,8 @@
       "/products/image_00021.jpg",
       "/products/image_00022.jpg",
       "/products/image_00023.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 11,
@@ -122,7 +131,8 @@
     "images": [
       "/products/image_00024.jpg",
       "/products/image_00025.jpg"
-    ]
+    ],
+    "category": "bilyard"
   },
   {
     "id": 12,
@@ -134,7 +144,8 @@
     "images": [
       "/products/image_00026.jpg",
       "/products/image_00027.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 13,
@@ -146,7 +157,8 @@
     "images": [
       "/products/image_00028.jpg",
       "/products/image_00029.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 14,
@@ -157,7 +169,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48286277",
     "images": [
       "/products/image_00030.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 15,
@@ -168,7 +181,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48197386",
     "images": [
       "/products/image_00031.jpg"
-    ]
+    ],
+    "category": "bilyard"
   },
   {
     "id": 16,
@@ -179,7 +193,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48218534",
     "images": [
       "/products/image_00032.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 17,
@@ -190,7 +205,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48164797",
     "images": [
       "/products/image_00033.jpg"
-    ]
+    ],
+    "category": "bilyard"
   },
   {
     "id": 18,
@@ -202,7 +218,8 @@
     "images": [
       "/products/image_00034.jpg",
       "/products/image_00035.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 19,
@@ -213,7 +230,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48337727",
     "images": [
       "/products/image_00036.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 20,
@@ -224,7 +242,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48337707",
     "images": [
       "/products/image_00037.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 21,
@@ -235,7 +254,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48337691",
     "images": [
       "/products/image_00038.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 22,
@@ -247,7 +267,8 @@
     "images": [
       "/products/image_00039.jpg",
       "/products/image_00040.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 23,
@@ -260,7 +281,8 @@
       "/products/image_00041.jpg",
       "/products/image_00042.jpg",
       "/products/image_00043.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 24,
@@ -272,7 +294,8 @@
     "images": [
       "/products/image_00044.jpg",
       "/products/image_00045.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 25,
@@ -284,7 +307,8 @@
     "images": [
       "/products/image_00046.jpg",
       "/products/image_00047.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 26,
@@ -296,7 +320,8 @@
     "images": [
       "/products/image_00048.jpg",
       "/products/image_00049.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 27,
@@ -308,7 +333,8 @@
     "images": [
       "/products/image_00050.jpg",
       "/products/image_00051.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 28,
@@ -319,7 +345,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48250070",
     "images": [
       "/products/image_00052.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 29,
@@ -330,7 +357,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48325853",
     "images": [
       "/products/image_00053.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 30,
@@ -341,7 +369,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324617",
     "images": [
       "/products/image_00054.jpg"
-    ]
+    ],
+    "category": "usaq"
   },
   {
     "id": 31,
@@ -352,7 +381,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324598",
     "images": [
       "/products/image_00055.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 32,
@@ -363,7 +393,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324583",
     "images": [
       "/products/image_00056.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 33,
@@ -374,7 +405,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324550",
     "images": [
       "/products/image_00057.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 34,
@@ -385,7 +417,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48324536",
     "images": [
       "/products/image_00058.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 35,
@@ -398,7 +431,8 @@
       "/products/image_00059.jpg",
       "/products/image_00060.jpg",
       "/products/image_00061.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 36,
@@ -409,7 +443,8 @@
     "link": "https://tap.az/elanlar/ev-ve-bag-ucun/dekor-interyer/48324461",
     "images": [
       "/products/image_00062.jpg"
-    ]
+    ],
+    "category": "kubok"
   },
   {
     "id": 37,
@@ -421,7 +456,8 @@
     "images": [
       "/products/image_00063.jpg",
       "/products/image_00064.jpg"
-    ]
+    ],
+    "category": "kubok"
   },
   {
     "id": 38,
@@ -432,7 +468,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/aksesuarlar/48324406",
     "images": [
       "/products/image_00065.jpg"
-    ]
+    ],
+    "category": "kubok"
   },
   {
     "id": 39,
@@ -443,7 +480,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/aksesuarlar/48324363",
     "images": [
       "/products/image_00066.jpg"
-    ]
+    ],
+    "category": "kubok"
   },
   {
     "id": 40,
@@ -460,7 +498,8 @@
       "/products/image_00071.jpg",
       "/products/image_00072.jpg",
       "/products/image_00073.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 41,
@@ -471,7 +510,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48291892",
     "images": [
       "/products/image_00074.jpg"
-    ]
+    ],
+    "category": "diger"
   },
   {
     "id": 42,
@@ -483,7 +523,8 @@
     "images": [
       "/products/image_00075.jpg",
       "/products/image_00076.jpg"
-    ]
+    ],
+    "category": "usaq"
   },
   {
     "id": 43,
@@ -496,7 +537,8 @@
       "/products/image_00077.jpg",
       "/products/image_00078.jpg",
       "/products/image_00079.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 44,
@@ -509,7 +551,8 @@
       "/products/image_00080.jpg",
       "/products/image_00081.jpg",
       "/products/image_00082.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 45,
@@ -521,7 +564,8 @@
     "images": [
       "/products/image_00083.jpg",
       "/products/image_00084.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 46,
@@ -533,7 +577,8 @@
     "images": [
       "/products/image_00085.jpg",
       "/products/image_00086.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 47,
@@ -545,7 +590,8 @@
     "images": [
       "/products/image_00087.jpg",
       "/products/image_00088.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 48,
@@ -557,7 +603,8 @@
     "images": [
       "/products/image_00089.jpg",
       "/products/image_00090.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 49,
@@ -568,7 +615,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48286672",
     "images": [
       "/products/image_00091.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 50,
@@ -579,7 +627,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/geyim-ayaqqabilar/48286592",
     "images": [
       "/products/image_00092.jpg"
-    ]
+    ],
+    "category": "geyim"
   },
   {
     "id": 51,
@@ -590,7 +639,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48286543",
     "images": [
       "/products/image_00093.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 52,
@@ -603,7 +653,8 @@
       "/products/image_00094.jpg",
       "/products/image_00095.jpg",
       "/products/image_00096.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 53,
@@ -615,7 +666,8 @@
     "images": [
       "/products/image_00097.jpg",
       "/products/image_00098.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 54,
@@ -626,7 +678,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48286207",
     "images": [
       "/products/image_00099.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 55,
@@ -639,7 +692,8 @@
       "/products/image_00100.jpg",
       "/products/image_00101.jpg",
       "/products/image_00102.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 56,
@@ -650,7 +704,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48226599",
     "images": [
       "/products/image_00103.jpg"
-    ]
+    ],
+    "category": "bilyard"
   },
   {
     "id": 57,
@@ -661,7 +716,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/gozellik-saglamliq/48271776",
     "images": [
       "/products/image_00104.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 58,
@@ -672,7 +728,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/gozellik-saglamliq/48271751",
     "images": [
       "/products/image_00105.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 59,
@@ -684,7 +741,8 @@
     "images": [
       "/products/image_00106.jpg",
       "/products/image_00107.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 60,
@@ -695,7 +753,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/gozellik-saglamliq/48271683",
     "images": [
       "/products/image_00108.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 61,
@@ -706,7 +765,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/gozellik-saglamliq/48271672",
     "images": [
       "/products/image_00109.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 62,
@@ -717,7 +777,8 @@
     "link": "https://tap.az/elanlar/sexsi-esyalar/gozellik-saglamliq/48271659",
     "images": [
       "/products/image_00110.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 63,
@@ -729,7 +790,8 @@
     "images": [
       "/products/image_00111.jpg",
       "/products/image_00112.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 64,
@@ -741,7 +803,8 @@
     "images": [
       "/products/image_00113.jpg",
       "/products/image_00114.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 65,
@@ -753,7 +816,8 @@
     "images": [
       "/products/image_00115.jpg",
       "/products/image_00116.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 66,
@@ -765,7 +829,8 @@
     "images": [
       "/products/image_00117.jpg",
       "/products/image_00118.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 67,
@@ -776,7 +841,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48259937",
     "images": [
       "/products/image_00119.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 68,
@@ -787,7 +853,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48259885",
     "images": [
       "/products/image_00120.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 69,
@@ -798,7 +865,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48259820",
     "images": [
       "/products/image_00121.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 70,
@@ -810,7 +878,8 @@
     "images": [
       "/products/image_00122.jpg",
       "/products/image_00123.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 71,
@@ -821,7 +890,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257353",
     "images": [
       "/products/image_00124.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 72,
@@ -832,7 +902,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257350",
     "images": [
       "/products/image_00125.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 73,
@@ -843,7 +914,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257344",
     "images": [
       "/products/image_00126.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 74,
@@ -854,7 +926,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257342",
     "images": [
       "/products/image_00127.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 75,
@@ -865,7 +938,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257339",
     "images": [
       "/products/image_00128.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 76,
@@ -876,7 +950,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257330",
     "images": [
       "/products/image_00129.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 77,
@@ -887,7 +962,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48257328",
     "images": [
       "/products/image_00130.jpg"
-    ]
+    ],
+    "category": "tenis"
   },
   {
     "id": 78,
@@ -899,7 +975,8 @@
     "images": [
       "/products/image_00131.jpg",
       "/products/image_00132.jpg"
-    ]
+    ],
+    "category": "doyus"
   },
   {
     "id": 79,
@@ -912,7 +989,8 @@
       "/products/image_00133.jpg",
       "/products/image_00134.jpg",
       "/products/image_00135.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 80,
@@ -923,7 +1001,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48253651",
     "images": [
       "/products/image_00136.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 81,
@@ -935,7 +1014,8 @@
     "images": [
       "/products/image_00137.jpg",
       "/products/image_00138.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 82,
@@ -946,7 +1026,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48252772",
     "images": [
       "/products/image_00139.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 83,
@@ -958,7 +1039,8 @@
     "images": [
       "/products/image_00140.jpg",
       "/products/image_00141.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 84,
@@ -969,7 +1051,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48252510",
     "images": [
       "/products/image_00142.jpg"
-    ]
+    ],
+    "category": "trenajor"
   },
   {
     "id": 85,
@@ -981,7 +1064,8 @@
     "images": [
       "/products/image_00143.jpg",
       "/products/image_00144.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 86,
@@ -993,7 +1077,8 @@
     "images": [
       "/products/image_00145.jpg",
       "/products/image_00146.jpg"
-    ]
+    ],
+    "category": "agirliq"
   },
   {
     "id": 87,
@@ -1005,7 +1090,8 @@
     "images": [
       "/products/image_00147.jpg",
       "/products/image_00148.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 88,
@@ -1017,7 +1103,8 @@
     "images": [
       "/products/image_00149.jpg",
       "/products/image_00150.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 89,
@@ -1030,7 +1117,8 @@
       "/products/image_00151.jpg",
       "/products/image_00152.jpg",
       "/products/image_00153.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 90,
@@ -1042,7 +1130,8 @@
     "images": [
       "/products/image_00154.jpg",
       "/products/image_00155.jpg"
-    ]
+    ],
+    "category": "skuter"
   },
   {
     "id": 91,
@@ -1054,7 +1143,8 @@
     "images": [
       "/products/image_00156.jpg",
       "/products/image_00157.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 92,
@@ -1066,7 +1156,8 @@
     "images": [
       "/products/image_00158.jpg",
       "/products/image_00159.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 93,
@@ -1078,7 +1169,8 @@
     "images": [
       "/products/image_00160.jpg",
       "/products/image_00161.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 94,
@@ -1089,7 +1181,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48237070",
     "images": [
       "/products/image_00162.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 95,
@@ -1100,7 +1193,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48236987",
     "images": [
       "/products/image_00163.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 96,
@@ -1111,7 +1205,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48236959",
     "images": [
       "/products/image_00164.jpg"
-    ]
+    ],
+    "category": "futbol"
   },
   {
     "id": 97,
@@ -1122,7 +1217,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48235510",
     "images": [
       "/products/image_00165.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 98,
@@ -1133,7 +1229,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48235472",
     "images": [
       "/products/image_00166.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 99,
@@ -1144,7 +1241,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48233481",
     "images": [
       "/products/image_00167.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 100,
@@ -1155,7 +1253,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48233251",
     "images": [
       "/products/image_00168.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 101,
@@ -1168,7 +1267,8 @@
       "/products/image_00169.jpg",
       "/products/image_00170.jpg",
       "/products/image_00171.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 102,
@@ -1179,7 +1279,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48227198",
     "images": [
       "/products/image_00172.jpg"
-    ]
+    ],
+    "category": "basketbol"
   },
   {
     "id": 103,
@@ -1190,7 +1291,8 @@
     "link": "https://tap.az/elanlar/hobbi-ve-asude/idman-ve-asude/48227094",
     "images": [
       "/products/image_00173.jpg"
-    ]
+    ],
+    "category": "oyun"
   },
   {
     "id": 104,
@@ -1201,7 +1303,8 @@
     "link": "https://tap.az/elanlar/ev-ve-bag-ucun/meiset-texnikasi/48226821",
     "images": [
       "/products/image_00174.jpg"
-    ]
+    ],
+    "category": "masaj"
   },
   {
     "id": 105,
@@ -1213,7 +1316,8 @@
     "images": [
       "/products/image_00175.jpg",
       "/products/image_00176.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 106,
@@ -1225,7 +1329,8 @@
     "images": [
       "/products/image_00177.jpg",
       "/products/image_00178.jpg"
-    ]
+    ],
+    "category": "rolik"
   },
   {
     "id": 107,
@@ -1244,7 +1349,8 @@
       "/products/image_00185.jpg",
       "/products/image_00186.jpg",
       "/products/image_00187.jpg"
-    ]
+    ],
+    "category": "geyim"
   },
   {
     "id": 108,
@@ -1257,7 +1363,8 @@
       "/products/image_00188.jpg",
       "/products/image_00189.jpg",
       "/products/image_00190.jpg"
-    ]
+    ],
+    "category": "geyim"
   },
   {
     "id": 109,
@@ -1271,6 +1378,7 @@
       "/products/image_00192.jpg",
       "/products/image_00193.jpg",
       "/products/image_00194.jpg"
-    ]
+    ],
+    "category": "diger"
   }
 ]

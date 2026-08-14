@@ -8,6 +8,11 @@ export type Product = {
   description: string;
   link: string;
   images: string[];
+  /**
+   * One of the ids from `src/data/categories.ts`. Optional so that historical
+   * snapshots (data/order-products.json) stay valid without a migration.
+   */
+  category?: string;
 };
 
 // Typed compatibility adapter for existing public consumers.
