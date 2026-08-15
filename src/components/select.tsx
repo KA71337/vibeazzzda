@@ -104,7 +104,7 @@ export function Select({value, onChange, options, placeholder = '', label, icon,
         aria-activedescendant={open ? `${id}-opt-${active}` : undefined}
         onClick={() => (open ? setOpen(false) : openAt(selected))}
         onKeyDown={onKeyDown}
-        className="flex h-12 w-full items-center gap-2 rounded-2xl bg-white px-4 text-left outline-none transition focus-visible:ring-2 focus-visible:ring-black"
+        className="flex min-h-14 w-full items-center gap-3 rounded-[1.15rem] bg-white px-4 text-left text-sm shadow-sm outline-none transition hover:shadow-md focus-visible:ring-2 focus-visible:ring-black"
       >
         {icon && <span className="shrink-0 text-gray-500">{icon}</span>}
         <span className={`flex-1 truncate ${current ? '' : 'text-gray-500'}`}>{current?.label ?? placeholder}</span>

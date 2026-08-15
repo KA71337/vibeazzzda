@@ -1,1 +1,12 @@
-import {Catalog} from '@/components/catalog';export default function Page(){return <section className="container py-12"><p className="text-xs font-bold uppercase tracking-widest text-gray-500">VIBE AZ</p><h1 className="mb-10 mt-3 text-4xl font-black sm:text-6xl">Kataloq</h1><Catalog/></section>}
+import type {Metadata} from 'next';
+import {CatalogPageContent} from '@/components/catalog-page-content';
+
+export const metadata:Metadata={
+ title:'Kataloq',
+ description:'VIBE AZ idman, aktiv həyat, sağlamlıq və əyləncə məhsulları kataloqu.',
+ alternates:{canonical:'/catalog/'},
+ openGraph:{url:'/catalog/',title:'Kataloq | VIBE AZ',description:'İdman, aktiv həyat, sağlamlıq və əyləncə üçün seçilmiş məhsullar.'},
+ twitter:{card:'summary_large_image',title:'Kataloq | VIBE AZ',description:'İdman, aktiv həyat, sağlamlıq və əyləncə üçün seçilmiş məhsullar.'},
+};
+
+export default function Page(){return <CatalogPageContent/>}

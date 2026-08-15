@@ -1,4 +1,93 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#0a0a0a;background:#fff;overflow-x:hidden}.container{max-width:1280px;margin:auto;padding-left:clamp(1rem,4vw,3rem);padding-right:clamp(1rem,4vw,3rem)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;border-radius:999px;padding:.85rem 1.25rem;font-weight:700;transition:.2s}.btn-dark{background:#0a0a0a;color:white}.btn-dark:hover{background:#333;transform:translateY(-1px)}.btn-light{background:white;border:1px solid #ddd}.card-shadow{box-shadow:0 12px 40px rgba(0,0,0,.07)}.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}@media(max-width:767px){body{padding-bottom:4.5rem}}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: #0a0a0a;
+  background: #fff;
+  overflow-x: hidden;
+  font-family: var(--font-inter), Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline-offset: 3px; }
+::selection { background: #0a0a0a; color: #fff; }
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  padding-left: clamp(1rem, 4vw, 4rem);
+  padding-right: clamp(1rem, 4vw, 4rem);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .55rem;
+  border-radius: 999px;
+  padding: .85rem 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  transition: background .2s, color .2s, transform .2s, box-shadow .2s, border-color .2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-dark { background: #0a0a0a; color: #fff; }
+.btn-dark:hover { background: #2b2b2b; transform: translateY(-1px); box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.btn-light { background: #fff; border: 1px solid #e5e7eb; }
+.btn-light:hover { border-color: #0a0a0a; }
+
+.card-shadow { box-shadow: 0 12px 40px rgba(0,0,0,.07); }
+.line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Editorial display type for hero and section headings. */
+.display {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
+  text-wrap: balance;
+}
+.eyebrow {
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+}
+
+/* Thin monochrome scrollbars for inner scrollers (thumbnails, drawers). */
+.nice-scroll { scrollbar-width: thin; scrollbar-color: #d1d5db transparent; }
+.nice-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
+.nice-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 999px; }
+
+/* Hide number input spinners: quantity controls provide +/- buttons. */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; appearance: textfield; }
+
+/* Lock page scroll behind overlays (search, drawer, sheets). */
+body.overlay-open { overflow: hidden; }
+
+@media (max-width: 767px) {
+  body { padding-bottom: calc(4.5rem + env(safe-area-inset-bottom)); }
+  .container { padding-left: 1rem; padding-right: 1rem; }
+  .eyebrow { letter-spacing: .2em; }
+}
+
+html, body { max-width: 100%; }
+img, video, svg { max-width: 100%; }
+main, footer { min-width: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
