@@ -2,9 +2,30 @@
 import {createContext,useCallback,useContext,useEffect,useRef,useState} from 'react';
 import {Product} from '@/data/products';
 
-type Lang='az'|'ru'|'en';
+export type Lang='az'|'ru'|'en';
 type CartItem={id:number;qty:number};
 type Toast={id:number;text:string};
+
+const isLang=(value:unknown):value is Lang=>value==='az'||value==='ru'||value==='en';
+const readNumberArray=(key:string)=>{
+ try{
+  const value:unknown=JSON.parse(localStorage.getItem(key)||'[]');
+  return Array.isArray(value)?value.filter((id):id is number=>Number.isSafeInteger(id)&&id>0).slice(0,1000):[];
+ }catch{return []}
+};
+const readCart=()=>{
+ try{
+  const value:unknown=JSON.parse(localStorage.getItem('vibe-cart')||'[]');
+  if(!Array.isArray(value))return [];
+  const seen=new Set<number>();
+  return value.filter((item):item is CartItem=>{
+   if(!item||typeof item!=='object')return false;
+   const {id,qty}=item as Record<string,unknown>;
+   if(!Number.isSafeInteger(id)||!Number.isSafeInteger(qty)||(id as number)<=0||(qty as number)<=0||(qty as number)>999||seen.has(id as number))return false;
+   seen.add(id as number);return true;
+  }).slice(0,200);
+ }catch{return []}
+};
 
 const dict={
  az:{
@@ -120,20 +141,21 @@ export function StoreProvider({children}:{children:React.ReactNode}){
  const toastSeq=useRef(0);
 
  useEffect(()=>{
-  try{
-   setCart(JSON.parse(localStorage.getItem('vibe-cart')||'[]'));
-   setFavorites(JSON.parse(localStorage.getItem('vibe-favs')||'[]'));
-   const l=localStorage.getItem('vibe-lang') as Lang;
-   if(l==='az'||l==='ru'||l==='en')setLang(l);
-  }finally{setReady(true)}
+  setCart(readCart());
+  setFavorites(readNumberArray('vibe-favs'));
+  const saved=localStorage.getItem('vibe-lang');
+  if(isLang(saved))setLang(saved);
+  setReady(true);
  },[]);
 
  useEffect(()=>{
   document.documentElement.lang=lang;
   if(ready){
-   localStorage.setItem('vibe-cart',JSON.stringify(cart));
-   localStorage.setItem('vibe-favs',JSON.stringify(favorites));
-   localStorage.setItem('vibe-lang',lang);
+   try{
+    localStorage.setItem('vibe-cart',JSON.stringify(cart));
+    localStorage.setItem('vibe-favs',JSON.stringify(favorites));
+    localStorage.setItem('vibe-lang',lang);
+   }catch{/* Storage can be unavailable in privacy mode; state still works for this visit. */}
   }
  },[cart,favorites,lang,ready]);
 

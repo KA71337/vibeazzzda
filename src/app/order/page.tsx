@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import {ProductImageFrame} from '@/components/product-image-frame';
 import {useEffect,useState} from 'react';
 import {Check,Copy,FileWarning} from 'lucide-react';
 import {products} from '@/data/products';
