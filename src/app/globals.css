@@ -60,6 +60,120 @@ button { cursor: pointer; }
   letter-spacing: .3em;
 }
 
+/* Reference-led scooter hero. */
+.hero-panel {
+  position: relative;
+  display: grid;
+  min-height: clamp(540px, 46vw, 650px);
+  overflow: hidden;
+  color: #fff;
+  background: #030303;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 2.5rem;
+  isolation: isolate;
+}
+.hero-copy {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+  padding: clamp(2rem, 4vw, 4rem);
+}
+.hero-kicker {
+  color: rgba(255,255,255,.72);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .34em;
+}
+.hero-main { margin: auto 0; padding: 3.25rem 0 2.5rem; }
+.hero-title {
+  max-width: 800px;
+  margin: 0;
+  font-size: clamp(3.4rem, 7.2vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -.065em;
+  line-height: .9;
+  text-wrap: balance;
+}
+.hero-subtitle { margin: 1.6rem 0 0; color: rgba(255,255,255,.66); font-size: 1rem; }
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: .55rem;
+  margin-top: 1.45rem;
+  padding: .78rem 1.25rem;
+  color: #050505;
+  background: #fff;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 800;
+  transition: transform .2s, background .2s;
+}
+.hero-button:hover { background: #e8e8e8; transform: translateY(-1px); }
+.hero-meta { display: flex; align-items: center; gap: .75rem; color: rgba(255,255,255,.48); font-size: .66rem; }
+.hero-meta-line { width: 3.2rem; height: 1px; background: rgba(255,255,255,.23); }
+.hero-art { position: absolute; z-index: 1; inset: 0 0 0 45%; overflow: hidden; }
+.hero-art::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  background: linear-gradient(90deg, #030303 0%, rgba(3,3,3,.9) 13%, rgba(3,3,3,.12) 50%, rgba(3,3,3,.45) 100%);
+  pointer-events: none;
+}
+.hero-year {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: 5%;
+  color: rgba(255,255,255,.48);
+  text-shadow: 0 0 45px rgba(255,255,255,.16);
+  font-size: clamp(4.5rem, 9vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -.09em;
+  line-height: 1;
+  transform: translateY(-51%);
+  white-space: nowrap;
+}
+.hero-scooter {
+  z-index: 3;
+  object-fit: contain;
+  object-position: 64% 50%;
+  padding: 2.2rem 1.7rem 1.5rem 8%;
+  mix-blend-mode: screen;
+  filter: contrast(1.14) saturate(.8) brightness(.87);
+  clip-path: inset(1.5% round 22%);
+}
+.hero-glow { position: absolute; top: 18%; right: 13%; width: 48%; aspect-ratio: 1; border-radius: 50%; background: rgba(255,255,255,.1); filter: blur(70px); }
+.hero-orbit { position: absolute; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; }
+.hero-orbit-one { width: 75%; aspect-ratio: 1; right: -8%; top: -19%; }
+.hero-orbit-two { width: 48%; aspect-ratio: 1; right: 7%; top: 11%; }
+.hero-dot { position: absolute; width: 6px; height: 6px; background: #fff; border-radius: 50%; box-shadow: 0 0 20px rgba(255,255,255,.8); }
+.hero-dot-one { top: 23%; right: 14%; }
+.hero-dot-two { bottom: 18%; right: 42%; width: 4px; height: 4px; }
+
+@media (min-width: 768px) {
+  .hero-copy { width: 62%; }
+}
+@media (max-width: 767px) {
+  .hero-wrap { padding-top: .5rem; }
+  .hero-panel { min-height: 650px; border-radius: 1.75rem; }
+  .hero-copy { padding: 1.65rem 1.4rem; }
+  .hero-main { margin: 0; padding: 3rem 0 0; }
+  .hero-title { max-width: 10ch; font-size: clamp(3.05rem, 15vw, 4.25rem); line-height: .92; }
+  .hero-subtitle { max-width: 15rem; margin-top: 1.15rem; font-size: .9rem; }
+  .hero-button { margin-top: 1.2rem; }
+  .hero-meta { position: relative; z-index: 5; }
+  .hero-art { inset: 45% -15% 6% 5%; }
+  .hero-art::after { background: linear-gradient(180deg, #030303 0%, rgba(3,3,3,.42) 20%, rgba(3,3,3,.05) 48%, rgba(3,3,3,.62) 100%); }
+  .hero-scooter { object-position: 54% 53%; padding: 0 3rem 0 5rem; }
+  .hero-year { top: 54%; right: 12%; font-size: clamp(3.2rem, 15vw, 4.5rem); }
+  .hero-orbit-one { width: 100%; right: -16%; top: -20%; }
+  .hero-orbit-two { width: 65%; }
+}
+
 /* Thin monochrome scrollbars for inner scrollers (thumbnails, drawers). */
 .nice-scroll { scrollbar-width: thin; scrollbar-color: #d1d5db transparent; }
 .nice-scroll::-webkit-scrollbar { height: 6px; width: 6px; }
