@@ -1,12 +1,14 @@
 'use client';
 import {createContext,useCallback,useContext,useEffect,useRef,useState} from 'react';
-import {Product} from '@/data/products';
+import {products,type Product} from '@/data/products';
+import {canIncreaseQuantity,isInStock} from '@/lib/stock';
+import {DEFAULT_LANG,isLang,type Lang} from '@/lib/i18n';
 
-export type Lang='az'|'ru'|'en';
+export type {Lang} from '@/lib/i18n';
 type CartItem={id:number;qty:number};
 type Toast={id:number;text:string};
 
-const isLang=(value:unknown):value is Lang=>value==='az'||value==='ru'||value==='en';
+const productById=new Map(products.map(product=>[product.id,product]));
 const readNumberArray=(key:string)=>{
  try{
   const value:unknown=JSON.parse(localStorage.getItem(key)||'[]');
@@ -23,7 +25,7 @@ const readCart=()=>{
    const {id,qty}=item as Record<string,unknown>;
    if(!Number.isSafeInteger(id)||!Number.isSafeInteger(qty)||(id as number)<=0||(qty as number)<=0||(qty as number)>999||seen.has(id as number))return false;
    seen.add(id as number);return true;
-  }).slice(0,200);
+  }).filter(item=>productById.has(item.id)).slice(0,200);
  }catch{return []}
 };
 
@@ -56,6 +58,8 @@ const dict={
   productData:'Yoxlanılmış məhsul məlumatları',deliveryAzerbaijan:'Azərbaycan üzrə çatdırılma',simpleOrderLink:'Sifariş üçün sadə link',details:'Təsvir və xüsusiyyətlər',decrease:'Azalt',increase:'Artır',
   searchHelper:'Məhsulun adını və ya təsvirini yazın',items:'məhsul',productPlural:'Məhsullar',orderSummary:'Sifariş xülasəsi',privacyNote:'Şəxsi məlumat tələb olunmur. Səbət təhlükəsiz linkə çevrilir.',secureOrderNote:'Sifariş məlumatları paylaşılmış linkdən təhlükəsiz oxunub.',requestNewLink:'Linki göndərən şəxsdən yeni link istəyin.',removedFromCart:'Məhsul səbətdən silindi',cartCleared:'Səbət təmizləndi',linkCopied:'Link kopyalandı ✓',
   footerClaim:'Müasir seçim. Real keyfiyyət.',location:'Bakı, Azərbaycan',menu:'Menyu',
+  outOfStock:'Stokda yoxdur',inStock:'Stokda var',unavailableCartHint:'Stokda olmayan məhsulu artırmaq və yeni sifarişə əlavə etmək olmaz.',unavailableOrderHint:'Sifarişi davam etdirmək üçün stokda olmayan məhsulu səbətdən silin.',
+  orderBuilder:'Sifariş qurucusu',sharedOrder:'Paylaşılmış sifariş',curated:'Seçilmişlər',curatedGoods:'Seçilmiş məhsullar',sale:'Endirim',imageUnavailable:'Şəkil mövcud deyil',image:'Şəkil',whatsAppOrderIntro:'Salam, sifarişimi göndərirəm:',
  },
  ru:{
   home:'Главная',catalog:'Каталог',about:'О нас',contact:'Контакты',favorites:'Избранное',cart:'Корзина',
@@ -85,6 +89,8 @@ const dict={
   productData:'Проверенная информация о товаре',deliveryAzerbaijan:'Доставка по Азербайджану',simpleOrderLink:'Простая ссылка для заказа',details:'Описание и характеристики',decrease:'Уменьшить',increase:'Увеличить',
   searchHelper:'Введите название или описание товара',items:'товаров',productPlural:'Товары',orderSummary:'Сводка заказа',privacyNote:'Личные данные не требуются. Корзина превращается в безопасную ссылку.',secureOrderNote:'Данные заказа безопасно прочитаны из общей ссылки.',requestNewLink:'Попросите отправителя создать новую ссылку.',removedFromCart:'Товар удалён из корзины',cartCleared:'Корзина очищена',linkCopied:'Ссылка скопирована ✓',
   footerClaim:'Современный выбор. Настоящее качество.',location:'Баку, Азербайджан',menu:'Меню',
+  outOfStock:'Нет в наличии',inStock:'В наличии',unavailableCartHint:'Товар без наличия нельзя увеличить или добавить в новый заказ.',unavailableOrderHint:'Удалите товар без наличия из корзины, чтобы продолжить оформление.',
+  orderBuilder:'Конструктор заказа',sharedOrder:'Общий заказ',curated:'Подборка',curatedGoods:'Отобранные товары',sale:'Скидка',imageUnavailable:'Изображение недоступно',image:'Изображение',whatsAppOrderIntro:'Здравствуйте, отправляю мой заказ:',
  },
  en:{
   home:'Home',catalog:'Catalog',about:'About',contact:'Contact',favorites:'Favorites',cart:'Cart',
@@ -114,6 +120,8 @@ const dict={
   productData:'Verified product information',deliveryAzerbaijan:'Delivery across Azerbaijan',simpleOrderLink:'Simple order link',details:'Description and specifications',decrease:'Decrease',increase:'Increase',
   searchHelper:'Enter a product name or description',items:'items',productPlural:'Products',orderSummary:'Order summary',privacyNote:'No personal information is required. Your cart becomes a secure link.',secureOrderNote:'Order details were securely read from the shared link.',requestNewLink:'Ask the sender to create a new link.',removedFromCart:'Product removed from cart',cartCleared:'Cart cleared',linkCopied:'Link copied ✓',
   footerClaim:'Modern choice. Real quality.',location:'Baku, Azerbaijan',menu:'Menu',
+  outOfStock:'Out of stock',inStock:'In stock',unavailableCartHint:'An out-of-stock item cannot be increased or added to a new order.',unavailableOrderHint:'Remove the out-of-stock item from the cart to continue.',
+  orderBuilder:'Order builder',sharedOrder:'Shared order',curated:'Curated',curatedGoods:'Curated goods',sale:'Sale',imageUnavailable:'Image unavailable',image:'Image',whatsAppOrderIntro:'Hello, here is my order:',
  },
 };
 
@@ -121,7 +129,7 @@ export type Dict=typeof dict.az;
 
 type Ctx={
  cart:CartItem[];favorites:number[];lang:Lang;t:Dict;
- add:(p:Product)=>void;remove:(id:number)=>void;setQty:(id:number,q:number)=>void;clear:()=>void;
+  add:(p:Product,qty?:number)=>void;remove:(id:number)=>void;setQty:(id:number,q:number)=>void;clear:()=>void;
  toggleFav:(id:number)=>void;setLang:(l:Lang)=>void;
  drawer:boolean;setDrawer:(v:boolean)=>void;
  searchOpen:boolean;setSearchOpen:(v:boolean)=>void;
@@ -134,7 +142,7 @@ const C=createContext<Ctx|null>(null);
 export const priceOf=(p:Product)=>p.newPrice??p.price;
 
 export function StoreProvider({children}:{children:React.ReactNode}){
- const[cart,setCart]=useState<CartItem[]>([]),[favorites,setFavorites]=useState<number[]>([]),[lang,setLang]=useState<Lang>('az');
+ const[cart,setCart]=useState<CartItem[]>([]),[favorites,setFavorites]=useState<number[]>([]),[lang,setLang]=useState<Lang>(DEFAULT_LANG);
  const[ready,setReady]=useState(false);
  const[drawer,setDrawer]=useState(false),[searchOpen,setSearchOpen]=useState(false);
  const[toasts,setToasts]=useState<Toast[]>([]);
@@ -171,15 +179,28 @@ export function StoreProvider({children}:{children:React.ReactNode}){
   setTimeout(()=>setToasts(x=>x.filter(t=>t.id!==id)),2600);
  },[]);
 
- const add=useCallback((p:Product)=>{
-  setCart(c=>c.some(x=>x.id===p.id)?c.map(x=>x.id===p.id?{...x,qty:x.qty+1}:x):[...c,{id:p.id,qty:1}]);
-  notify(dict[lang].added);
- },[lang,notify]);
+ const add=useCallback((p:Product,qty=1)=>{
+   if(!isInStock(p)){notify(dict[lang].outOfStock);return}
+   const amount=Number.isSafeInteger(qty)?Math.min(999,Math.max(1,qty)):1;
+   setCart(c=>c.some(x=>x.id===p.id)?c.map(x=>x.id===p.id?{...x,qty:Math.min(999,x.qty+amount)}:x):[...c,{id:p.id,qty:amount}]);
+   notify(dict[lang].added);
+  },[lang,notify]);
+
+ const setQty=useCallback((id:number,q:number)=>{
+  setCart(c=>{
+   const item=c.find(x=>x.id===id),product=productById.get(id);
+   if(!item||!product)return c.filter(x=>x.id!==id);
+   if(!Number.isSafeInteger(q)||q<1)return c.filter(x=>x.id!==id);
+   const next=Math.min(999,q);
+   if(!canIncreaseQuantity(product,item.qty,next))return c;
+   return c.map(x=>x.id===id?{...x,qty:next}:x);
+  });
+ },[]);
 
  return <C.Provider value={{
   cart,favorites,lang,t:dict[lang],add,
   remove:id=>setCart(c=>c.filter(x=>x.id!==id)),
-  setQty:(id,q)=>setCart(c=>q<1?c.filter(x=>x.id!==id):c.map(x=>x.id===id?{...x,qty:q}:x)),
+  setQty,
   clear:()=>setCart([]),
   toggleFav:id=>setFavorites(f=>f.includes(id)?f.filter(x=>x!==id):[...f,id]),
   setLang,drawer,setDrawer,searchOpen,setSearchOpen,toasts,notify,

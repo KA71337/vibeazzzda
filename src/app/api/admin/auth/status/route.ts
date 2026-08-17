@@ -1,20 +1,11 @@
 import {NextResponse} from 'next/server';
-import {currentSession, noStore} from '@/server/security';
-import {AUTH_ENV, CATALOG_ENV, missingEnv} from '@/server/config';
+import {getAuthConfig,getCatalogConfig} from '@/server/config';
+import {currentSession,noStore} from '@/server/security';
 
-export const runtime = 'nodejs';
-export const dynamic = 'force-dynamic';
+export const runtime='nodejs';
+export const dynamic='force-dynamic';
 
-export async function GET() {
-  const session = await currentSession();
-  const missingAuth = missingEnv(AUTH_ENV), missingCatalog = missingEnv(CATALOG_ENV);
-  return NextResponse.json({
-    authenticated: !!session,
-    // Login only needs the auth variables; the catalog credentials are reported
-    // separately so a missing GitHub token no longer blocks sign-in.
-    configured: missingAuth.length === 0,
-    catalogConfigured: missingCatalog.length === 0,
-    missing: [...missingAuth, ...missingCatalog],
-    csrf: session?.csrf,
-  }, {headers: noStore});
+export async function GET(){
+ const session=await currentSession();
+ return NextResponse.json({authenticated:!!session,configured:!!getAuthConfig(),catalogConfigured:!!getCatalogConfig(),csrf:session?.csrf},{headers:noStore});
 }

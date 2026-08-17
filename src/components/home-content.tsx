@@ -14,7 +14,7 @@ export function HomeContent(){
   <section className="hero-wrap container py-4 md:py-8">
    <div className="hero-panel">
     <div className="hero-copy">
-     <span className="hero-kicker">VIBE AZ - CURATED GOODS</span>
+     <span className="hero-kicker">VIBE AZ - {t.curatedGoods}</span>
      <div className="hero-main">
       <h1 className="hero-title">{t.heroTitle}</h1>
       <p className="hero-subtitle">{t.heroSub}</p>

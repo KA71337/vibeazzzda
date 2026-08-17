@@ -18,7 +18,8 @@
       "/products/image_00009.jpg",
       "/products/image_00010.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 3,
@@ -30,7 +31,8 @@
     "images": [
       "/products/image_00011.jpg"
     ],
-    "category": "skuter"
+    "category": "skuter",
+    "inStock": true
   },
   {
     "id": 4,
@@ -42,7 +44,8 @@
     "images": [
       "/products/image_00012.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 5,
@@ -54,7 +57,8 @@
     "images": [
       "/products/image_00013.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 6,
@@ -66,7 +70,8 @@
     "images": [
       "/products/image_00014.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 7,
@@ -79,7 +84,8 @@
       "/products/image_00015.jpg",
       "/products/image_00016.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 8,
@@ -92,7 +98,8 @@
       "/products/image_00017.jpg",
       "/products/image_00018.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 9,
@@ -105,7 +112,8 @@
       "/products/image_00019.jpg",
       "/products/image_00020.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 11,
@@ -118,7 +126,8 @@
       "/products/image_00024.jpg",
       "/products/image_00025.jpg"
     ],
-    "category": "bilyard"
+    "category": "bilyard",
+    "inStock": true
   },
   {
     "id": 12,
@@ -131,7 +140,8 @@
       "/products/image_00026.jpg",
       "/products/image_00027.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 13,
@@ -144,7 +154,8 @@
       "/products/image_00028.jpg",
       "/products/image_00029.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 14,
@@ -156,7 +167,8 @@
     "images": [
       "/products/image_00030.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 15,
@@ -168,7 +180,8 @@
     "images": [
       "/products/image_00031.jpg"
     ],
-    "category": "bilyard"
+    "category": "bilyard",
+    "inStock": true
   },
   {
     "id": 16,
@@ -180,7 +193,8 @@
     "images": [
       "/products/image_00032.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 17,
@@ -192,7 +206,8 @@
     "images": [
       "/products/image_00033.jpg"
     ],
-    "category": "bilyard"
+    "category": "bilyard",
+    "inStock": true
   },
   {
     "id": 18,
@@ -205,7 +220,8 @@
       "/products/image_00034.jpg",
       "/products/image_00035.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 19,
@@ -217,7 +233,8 @@
     "images": [
       "/products/image_00036.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 20,
@@ -229,7 +246,8 @@
     "images": [
       "/products/image_00037.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 21,
@@ -241,7 +259,8 @@
     "images": [
       "/products/image_00038.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 22,
@@ -254,7 +273,8 @@
       "/products/image_00039.jpg",
       "/products/image_00040.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 23,
@@ -268,7 +288,8 @@
       "/products/image_00042.jpg",
       "/products/image_00043.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 24,
@@ -281,7 +302,8 @@
       "/products/image_00044.jpg",
       "/products/image_00045.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 25,
@@ -294,7 +316,8 @@
       "/products/image_00046.jpg",
       "/products/image_00047.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 26,
@@ -307,7 +330,8 @@
       "/products/image_00048.jpg",
       "/products/image_00049.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 27,
@@ -320,7 +344,8 @@
       "/products/image_00050.jpg",
       "/products/image_00051.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 28,
@@ -332,7 +357,8 @@
     "images": [
       "/products/image_00052.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 29,
@@ -344,7 +370,8 @@
     "images": [
       "/products/image_00053.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 30,
@@ -356,7 +383,8 @@
     "images": [
       "/products/image_00054.jpg"
     ],
-    "category": "usaq"
+    "category": "usaq",
+    "inStock": true
   },
   {
     "id": 31,
@@ -368,7 +396,8 @@
     "images": [
       "/products/image_00055.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 32,
@@ -380,7 +409,8 @@
     "images": [
       "/products/image_00056.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 33,
@@ -392,7 +422,8 @@
     "images": [
       "/products/image_00057.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 34,
@@ -404,7 +435,8 @@
     "images": [
       "/products/image_00058.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 35,
@@ -418,7 +450,8 @@
       "/products/image_00060.jpg",
       "/products/image_00061.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 36,
@@ -430,7 +463,8 @@
     "images": [
       "/products/image_00062.jpg"
     ],
-    "category": "kubok"
+    "category": "kubok",
+    "inStock": true
   },
   {
     "id": 37,
@@ -443,7 +477,8 @@
       "/products/image_00063.jpg",
       "/products/image_00064.jpg"
     ],
-    "category": "kubok"
+    "category": "kubok",
+    "inStock": true
   },
   {
     "id": 38,
@@ -455,7 +490,8 @@
     "images": [
       "/products/image_00065.jpg"
     ],
-    "category": "kubok"
+    "category": "kubok",
+    "inStock": true
   },
   {
     "id": 39,
@@ -467,7 +503,8 @@
     "images": [
       "/products/image_00066.jpg"
     ],
-    "category": "kubok"
+    "category": "kubok",
+    "inStock": true
   },
   {
     "id": 40,
@@ -485,7 +522,8 @@
       "/products/image_00072.jpg",
       "/products/image_00073.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 41,
@@ -497,7 +535,8 @@
     "images": [
       "/products/image_00074.jpg"
     ],
-    "category": "diger"
+    "category": "diger",
+    "inStock": true
   },
   {
     "id": 42,
@@ -510,7 +549,8 @@
       "/products/image_00075.jpg",
       "/products/image_00076.jpg"
     ],
-    "category": "usaq"
+    "category": "usaq",
+    "inStock": true
   },
   {
     "id": 43,
@@ -524,7 +564,8 @@
       "/products/image_00078.jpg",
       "/products/image_00079.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 44,
@@ -538,7 +579,8 @@
       "/products/image_00081.jpg",
       "/products/image_00082.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 45,
@@ -551,7 +593,8 @@
       "/products/image_00083.jpg",
       "/products/image_00084.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 46,
@@ -564,7 +607,8 @@
       "/products/image_00085.jpg",
       "/products/image_00086.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 47,
@@ -577,7 +621,8 @@
       "/products/image_00087.jpg",
       "/products/image_00088.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 48,
@@ -590,7 +635,8 @@
       "/products/image_00089.jpg",
       "/products/image_00090.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 49,
@@ -602,7 +648,8 @@
     "images": [
       "/products/image_00091.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 50,
@@ -614,7 +661,8 @@
     "images": [
       "/products/image_00092.jpg"
     ],
-    "category": "geyim"
+    "category": "geyim",
+    "inStock": true
   },
   {
     "id": 51,
@@ -626,7 +674,8 @@
     "images": [
       "/products/image_00093.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 52,
@@ -640,7 +689,8 @@
       "/products/image_00095.jpg",
       "/products/image_00096.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 53,
@@ -653,7 +703,8 @@
       "/products/image_00097.jpg",
       "/products/image_00098.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 54,
@@ -665,7 +716,8 @@
     "images": [
       "/products/image_00099.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 55,
@@ -679,7 +731,8 @@
       "/products/image_00101.jpg",
       "/products/image_00102.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 56,
@@ -691,7 +744,8 @@
     "images": [
       "/products/image_00103.jpg"
     ],
-    "category": "bilyard"
+    "category": "bilyard",
+    "inStock": true
   },
   {
     "id": 57,
@@ -703,7 +757,8 @@
     "images": [
       "/products/image_00104.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 58,
@@ -715,7 +770,8 @@
     "images": [
       "/products/image_00105.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 59,
@@ -728,7 +784,8 @@
       "/products/image_00106.jpg",
       "/products/image_00107.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 60,
@@ -740,7 +797,8 @@
     "images": [
       "/products/image_00108.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 61,
@@ -752,7 +810,8 @@
     "images": [
       "/products/image_00109.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 62,
@@ -764,7 +823,8 @@
     "images": [
       "/products/image_00110.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 63,
@@ -777,7 +837,8 @@
       "/products/image_00111.jpg",
       "/products/image_00112.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 64,
@@ -790,7 +851,8 @@
       "/products/image_00113.jpg",
       "/products/image_00114.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 65,
@@ -803,7 +865,8 @@
       "/products/image_00115.jpg",
       "/products/image_00116.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 66,
@@ -816,7 +879,8 @@
       "/products/image_00117.jpg",
       "/products/image_00118.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 67,
@@ -828,7 +892,8 @@
     "images": [
       "/products/image_00119.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 68,
@@ -840,7 +905,8 @@
     "images": [
       "/products/image_00120.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 69,
@@ -852,7 +918,8 @@
     "images": [
       "/products/image_00121.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 70,
@@ -865,7 +932,8 @@
       "/products/image_00122.jpg",
       "/products/image_00123.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 71,
@@ -877,7 +945,8 @@
     "images": [
       "/products/image_00124.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 72,
@@ -889,7 +958,8 @@
     "images": [
       "/products/image_00125.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 73,
@@ -901,7 +971,8 @@
     "images": [
       "/products/image_00126.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 74,
@@ -913,7 +984,8 @@
     "images": [
       "/products/image_00127.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 75,
@@ -925,7 +997,8 @@
     "images": [
       "/products/image_00128.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 76,
@@ -937,7 +1010,8 @@
     "images": [
       "/products/image_00129.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 77,
@@ -949,7 +1023,8 @@
     "images": [
       "/products/image_00130.jpg"
     ],
-    "category": "tenis"
+    "category": "tenis",
+    "inStock": true
   },
   {
     "id": 78,
@@ -962,7 +1037,8 @@
       "/products/image_00131.jpg",
       "/products/image_00132.jpg"
     ],
-    "category": "doyus"
+    "category": "doyus",
+    "inStock": true
   },
   {
     "id": 79,
@@ -976,7 +1052,8 @@
       "/products/image_00134.jpg",
       "/products/image_00135.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 80,
@@ -988,7 +1065,8 @@
     "images": [
       "/products/image_00136.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 81,
@@ -1001,7 +1079,8 @@
       "/products/image_00137.jpg",
       "/products/image_00138.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 82,
@@ -1013,7 +1092,8 @@
     "images": [
       "/products/image_00139.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 83,
@@ -1026,7 +1106,8 @@
       "/products/image_00140.jpg",
       "/products/image_00141.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 84,
@@ -1038,7 +1119,8 @@
     "images": [
       "/products/image_00142.jpg"
     ],
-    "category": "trenajor"
+    "category": "trenajor",
+    "inStock": true
   },
   {
     "id": 85,
@@ -1051,7 +1133,8 @@
       "/products/image_00143.jpg",
       "/products/image_00144.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 86,
@@ -1064,7 +1147,8 @@
       "/products/image_00145.jpg",
       "/products/image_00146.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 87,
@@ -1077,7 +1161,8 @@
       "/products/image_00147.jpg",
       "/products/image_00148.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 88,
@@ -1090,7 +1175,8 @@
       "/products/image_00149.jpg",
       "/products/image_00150.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 89,
@@ -1104,7 +1190,8 @@
       "/products/image_00152.jpg",
       "/products/image_00153.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 90,
@@ -1117,7 +1204,8 @@
       "/products/image_00154.jpg",
       "/products/image_00155.jpg"
     ],
-    "category": "skuter"
+    "category": "skuter",
+    "inStock": true
   },
   {
     "id": 91,
@@ -1130,7 +1218,8 @@
       "/products/image_00156.jpg",
       "/products/image_00157.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 92,
@@ -1143,7 +1232,8 @@
       "/products/image_00158.jpg",
       "/products/image_00159.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 93,
@@ -1156,7 +1246,8 @@
       "/products/image_00160.jpg",
       "/products/image_00161.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 94,
@@ -1168,7 +1259,8 @@
     "images": [
       "/products/image_00162.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 95,
@@ -1180,7 +1272,8 @@
     "images": [
       "/products/image_00163.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 96,
@@ -1192,7 +1285,8 @@
     "images": [
       "/products/image_00164.jpg"
     ],
-    "category": "futbol"
+    "category": "futbol",
+    "inStock": true
   },
   {
     "id": 97,
@@ -1204,7 +1298,8 @@
     "images": [
       "/products/image_00165.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 98,
@@ -1216,7 +1311,8 @@
     "images": [
       "/products/image_00166.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 99,
@@ -1228,7 +1324,8 @@
     "images": [
       "/products/image_00167.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 100,
@@ -1240,7 +1337,8 @@
     "images": [
       "/products/image_00168.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 101,
@@ -1254,7 +1352,8 @@
       "/products/image_00170.jpg",
       "/products/image_00171.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 102,
@@ -1266,7 +1365,8 @@
     "images": [
       "/products/image_00172.jpg"
     ],
-    "category": "basketbol"
+    "category": "basketbol",
+    "inStock": true
   },
   {
     "id": 103,
@@ -1278,7 +1378,8 @@
     "images": [
       "/products/image_00173.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 104,
@@ -1290,7 +1391,8 @@
     "images": [
       "/products/image_00174.jpg"
     ],
-    "category": "masaj"
+    "category": "masaj",
+    "inStock": true
   },
   {
     "id": 105,
@@ -1303,7 +1405,8 @@
       "/products/image_00175.jpg",
       "/products/image_00176.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 106,
@@ -1316,7 +1419,8 @@
       "/products/image_00177.jpg",
       "/products/image_00178.jpg"
     ],
-    "category": "rolik"
+    "category": "rolik",
+    "inStock": true
   },
   {
     "id": 107,
@@ -1336,7 +1440,8 @@
       "/products/image_00186.jpg",
       "/products/image_00187.jpg"
     ],
-    "category": "geyim"
+    "category": "geyim",
+    "inStock": true
   },
   {
     "id": 108,
@@ -1350,7 +1455,8 @@
       "/products/image_00189.jpg",
       "/products/image_00190.jpg"
     ],
-    "category": "geyim"
+    "category": "geyim",
+    "inStock": true
   },
   {
     "id": 109,
@@ -1365,7 +1471,8 @@
       "/products/image_00193.jpg",
       "/products/image_00194.jpg"
     ],
-    "category": "diger"
+    "category": "diger",
+    "inStock": true
   },
   {
     "id": 110,
@@ -1378,7 +1485,8 @@
       "/products/admin/1786957636933-0-b7c81854-7c09-406b-8d20-89271b124c70.jpg",
       "/products/admin/1786957636933-1-839cf1af-482c-4aee-81df-d60c9a34136d.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 111,
@@ -1391,7 +1499,8 @@
       "/products/admin/1786957865894-0-8203974a-3097-4459-b9a7-adcb62960847.jpg",
       "/products/admin/1786957865894-1-bda7c7fc-0f8f-46b0-abc6-559fb4d7d1d2.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 112,
@@ -1403,7 +1512,8 @@
     "images": [
       "/products/admin/1786957924321-0-2d2d720f-a1c3-465e-8fa6-ad352e69ffe4.jpg"
     ],
-    "category": "oyun"
+    "category": "oyun",
+    "inStock": true
   },
   {
     "id": 113,
@@ -1416,7 +1526,8 @@
       "/products/admin/1786960493920-0-a84a3e0c-6cfe-4f49-9e55-598dfa35e270.jpg",
       "/products/admin/1786960493921-1-763c80e7-09ee-437f-ade6-bd73d49cac9c.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   },
   {
     "id": 114,
@@ -1429,6 +1540,7 @@
       "/products/admin/1786961467942-0-0024d790-eff3-46e9-b0de-3ddac77a412a.jpg",
       "/products/admin/1786961467942-1-09c465cd-8ea1-4dab-987f-6c694f8ebfa7.jpg"
     ],
-    "category": "agirliq"
+    "category": "agirliq",
+    "inStock": true
   }
 ]

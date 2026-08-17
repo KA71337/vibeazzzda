@@ -2,20 +2,11 @@ import 'server-only';
 
 export type AuthConfig = {adminPassword: string; sessionSecret: string};
 export type CatalogConfig = {githubToken: string; owner: string; repo: string; branch: string; productsPath: string; managedPrefix: string};
-export type ServerConfig = AuthConfig & CatalogConfig;
-
-export const AUTH_ENV = ['ADMIN_PASSWORD', 'SESSION_SECRET'] as const;
-export const CATALOG_ENV = ['GITHUB_TOKEN', 'GITHUB_OWNER', 'GITHUB_REPO'] as const;
 
 const read = (name: string) => {
   const v = process.env[name];
   return typeof v === 'string' && v.trim() !== '' ? v : undefined;
 };
-
-/** Names of the required variables that are absent or empty. */
-export function missingEnv(names: readonly string[] = [...AUTH_ENV, ...CATALOG_ENV]): string[] {
-  return names.filter(n => !read(n));
-}
 
 /**
  * Credentials needed to sign in. Deliberately independent of the GitHub
@@ -23,7 +14,7 @@ export function missingEnv(names: readonly string[] = [...AUTH_ENV, ...CATALOG_E
  */
 export function getAuthConfig(): AuthConfig | null {
   const adminPassword = read('ADMIN_PASSWORD'), sessionSecret = read('SESSION_SECRET');
-  if (!adminPassword || !sessionSecret) return null;
+  if (!adminPassword || !sessionSecret || adminPassword.length < 12 || Buffer.byteLength(sessionSecret, 'utf8') < 32 || adminPassword === sessionSecret) return null;
   return {adminPassword, sessionSecret};
 }
 
@@ -31,15 +22,14 @@ export function getAuthConfig(): AuthConfig | null {
 export function getCatalogConfig(): CatalogConfig | null {
   const githubToken = read('GITHUB_TOKEN'), owner = read('GITHUB_OWNER'), repo = read('GITHUB_REPO');
   if (!githubToken || !owner || !repo) return null;
+  const branch = read('GITHUB_BRANCH') || 'main', productsPath = read('GITHUB_PRODUCTS_PATH') || 'data/products.json';
+  const namePattern = /^[A-Za-z0-9_.-]{1,100}$/;
+  const pathPattern = /^[A-Za-z0-9._/-]{1,240}$/;
+  if (githubToken.length < 20 || !namePattern.test(owner) || !namePattern.test(repo) || !pathPattern.test(branch) || branch.includes('..') || !pathPattern.test(productsPath) || productsPath.startsWith('/') || productsPath.includes('..') || !productsPath.endsWith('.json')) return null;
   return {
     githubToken, owner, repo,
-    branch: read('GITHUB_BRANCH') || 'main',
-    productsPath: read('GITHUB_PRODUCTS_PATH') || 'data/products.json',
+    branch,
+    productsPath,
     managedPrefix: 'public/products/admin/',
   };
-}
-
-export function getConfig(): ServerConfig | null {
-  const auth = getAuthConfig(), catalog = getCatalogConfig();
-  return auth && catalog ? {...auth, ...catalog} : null;
 }

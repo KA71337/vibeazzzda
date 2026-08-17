@@ -1,11 +1,19 @@
 'use client';
-import {useEffect,useMemo,useState} from 'react';
+/* eslint-disable @next/next/no-img-element -- Admin previews support blob URLs and validated external catalog images. */
+import {useCallback,useEffect,useMemo,useState} from 'react';
 import type {Product} from '@/data/products';
 import {categories,categoryLabel} from '@/data/categories';
+import {isInStock} from '@/lib/stock';
 import './admin.css';
 
-type State={authenticated:boolean;configured:boolean;catalogConfigured?:boolean;missing?:string[];csrf?:string};
-const blank:Product={id:0,name:'',price:0,newPrice:null,description:'',link:'',images:[],category:''};
+type State={authenticated:boolean;configured:boolean;catalogConfigured?:boolean;csrf?:string};
+const blank:Product={id:0,name:'',price:0,newPrice:null,description:'',link:'',images:[],category:'',inStock:true};
+
+async function request(url:string,init?:RequestInit){
+ const response=await fetch(url,{...init,cache:'no-store'}),body=await response.json();
+ if(!response.ok)throw new Error(body.error||'Xəta baş verdi');
+ return body;
+}
 
 export default function Admin(){
  const[auth,setAuth]=useState<State|null>(null),[password,setPassword]=useState(''),[items,setItems]=useState<Product[]>([]),
@@ -13,24 +21,19 @@ export default function Admin(){
   [edit,setEdit]=useState<Product|null>(null),[files,setFiles]=useState<File[]>([]),
   [msg,setMsg]=useState(''),[err,setErr]=useState(''),[busy,setBusy]=useState(false);
 
- const request=async(url:string,init?:RequestInit)=>{
-  const r=await fetch(url,{...init,cache:'no-store'}),j=await r.json();
-  if(!r.ok)throw new Error(j.error||'Xəta baş verdi');
-  return j;
- };
- const load=async()=>{try{const j=await request('/api/admin/products');setItems(j.products);setRevision(j.revision);setErr('')}catch(e){setErr((e as Error).message)}};
+ const load=useCallback(async()=>{try{const j=await request('/api/admin/products');setItems((j.products as Product[]).map(p=>({...p,inStock:isInStock(p)})));setRevision(j.revision);setErr('')}catch(e){setErr((e as Error).message)}},[]);
 
  useEffect(()=>{
   request('/api/admin/auth/status')
    .then((s:State)=>{setAuth(s);if(s.authenticated&&s.catalogConfigured!==false)load()})
-   .catch(()=>setAuth({authenticated:false,configured:false,catalogConfigured:false,missing:[]}));
- },[]);
+   .catch(()=>setAuth({authenticated:false,configured:false,catalogConfigured:false}));
+ },[load]);
 
  const login=async(e:React.FormEvent)=>{
   e.preventDefault();setBusy(true);setErr('');
   try{
    const s=await request('/api/admin/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password})});
-   setAuth(a=>({catalogConfigured:a?.catalogConfigured,missing:a?.missing,authenticated:true,configured:true,csrf:s.csrf}));
+    setAuth(a=>({catalogConfigured:a?.catalogConfigured,authenticated:true,configured:true,csrf:s.csrf}));
    setPassword('');
    if(auth?.catalogConfigured!==false)await load();
   }catch(e){setErr((e as Error).message)}finally{setBusy(false)}
@@ -41,12 +44,13 @@ export default function Admin(){
   if(!edit||!auth?.csrf)return;
   setBusy(true);setErr('');setMsg('Yadda saxlanılır…');
   try{
+   const previous=items.find(x=>x.id===edit.id),stockChanged=!!previous&&isInStock(previous)!==isInStock(edit);
    const fd=new FormData();
    fd.set('revision',revision);
    fd.set('product',JSON.stringify(edit));
    files.forEach(f=>fd.append('images',f));
    await request('/api/admin/products',{method:items.some(x=>x.id===edit.id)?'PATCH':'POST',headers:{'x-csrf-token':auth.csrf},body:fd});
-   setEdit(null);setFiles([]);setMsg('Yadda saxlanıldı');
+   setEdit(null);setFiles([]);setMsg(stockChanged?'Məhsulun statusu yeniləndi ✓':'Yadda saxlanıldı');
    await load();
   }catch(e){setMsg('');setErr((e as Error).message)}finally{setBusy(false)}
  };
@@ -64,6 +68,19 @@ export default function Admin(){
   }catch(e){setErr((e as Error).message)}finally{setBusy(false)}
  };
 
+ const updateStock=async(p:Product,inStock:boolean)=>{
+  if(!auth?.csrf||busy||isInStock(p)===inStock)return;
+  setBusy(true);setErr('');setMsg('Status yenilənir…');
+  try{
+   const fd=new FormData();
+   fd.set('revision',revision);
+   fd.set('product',JSON.stringify({...p,inStock}));
+   await request('/api/admin/products',{method:'PATCH',headers:{'x-csrf-token':auth.csrf},body:fd});
+   setMsg('Məhsulun statusu yeniləndi ✓');
+   await load();
+  }catch(e){setMsg('');setErr((e as Error).message)}finally{setBusy(false)}
+ };
+
  const shown=useMemo(()=>items.filter(p=>
   (p.name+' '+p.id).toLowerCase().includes(query.toLowerCase().trim())&&(!filter||p.category===filter)
  ),[items,query,filter]);
@@ -75,7 +92,7 @@ export default function Admin(){
    <form className="panel" onSubmit={login}>
     <img src="/logo.jpeg" alt="VIBE AZ"/>
     <h1>Kataloq idarəetməsi</h1>
-    {!auth.configured&&<p className="error">Giriş konfiqurasiya edilməyib. Bu mühit dəyişənlərini təyin edin: {(auth.missing||[]).filter(v=>v==='ADMIN_PASSWORD'||v==='SESSION_SECRET').join(', ')||'ADMIN_PASSWORD, SESSION_SECRET'} — sonra tətbiqi yenidən yükləyin.</p>}
+    {!auth.configured&&<p className="error">Admin girişi serverdə konfiqurasiya edilməyib. Təhlükəsiz mühit dəyişənlərini yoxlayın və tətbiqi yenidən başladın.</p>}
     <label>Şifrə
      <input type="password" value={password} onChange={e=>setPassword(e.target.value)} autoComplete="current-password" required/>
     </label>
@@ -98,7 +115,7 @@ export default function Admin(){
     }}>Çıxış</button>
    </header>
 
-   {auth.catalogConfigured===false&&<p className="error">Kataloq əlçatan deyil: {(auth.missing||[]).filter(v=>v.startsWith('GITHUB_')).join(', ')||'GITHUB_TOKEN, GITHUB_OWNER, GITHUB_REPO'} dəyişənləri təyin edilməyib. Giriş işləyir, lakin məhsulları oxumaq və yadda saxlamaq mümkün deyil.</p>}
+   {auth.catalogConfigured===false&&<p className="error">Kataloq serverdə konfiqurasiya edilməyib. Giriş işləyir, lakin məhsulları oxumaq və yadda saxlamaq mümkün deyil.</p>}
 
    <section className="toolbar">
     <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ad və ya ID üzrə axtar" aria-label="Axtarış"/>
@@ -106,7 +123,7 @@ export default function Admin(){
      <option value="">Bütün kateqoriyalar</option>
      {categories.map(c=><option key={c.id} value={c.id}>{c.az}</option>)}
     </select>
-    <button onClick={()=>{setEdit({...blank,id:Math.max(0,...items.map(x=>x.id))+1});setFiles([])}} disabled={auth.catalogConfigured===false}>Məhsul əlavə et</button>
+     <button onClick={()=>{setEdit({...blank,id:Math.max(0,...items.map(x=>x.id))+1});setFiles([])}} disabled={auth.catalogConfigured===false||busy}>Məhsul əlavə et</button>
    </section>
 
    {err&&<p className="error">{err}</p>}
@@ -117,13 +134,14 @@ export default function Admin(){
     :<section className="grid">
       {shown.map(p=>
        <article className="card" key={p.id}>
-        <img src={p.images[0]||'/logo.jpeg'} alt="" loading="lazy"/>
-        <div className="body">
+         <img className={isInStock(p)?'':'unavailable'} src={p.images[0]||'/logo.jpeg'} alt="" loading="lazy"/>
+         <div className="body">
          <span className="name">#{p.id} · {p.name}</span>
          <span className="price">{p.newPrice??p.price} AZN</span>
-         {p.category&&<span className="tag">{categoryLabel(p.category,'az')}</span>}
-         <div className="actions">
-          <button className="secondary" onClick={()=>{setEdit({...p,category:p.category||'',images:[...p.images]});setFiles([])}}>Dəyiş</button>
+          {p.category&&<span className="tag">{categoryLabel(p.category,'az')}</span>}
+          <div className="stock-row"><span>Stok:</span><button type="button" role="switch" aria-checked={isInStock(p)} aria-label={`${p.name}: ${isInStock(p)?'stokda var':'stokda yoxdur'}`} className={`stock-switch ${isInStock(p)?'active':''}`} onClick={()=>updateStock(p,!isInStock(p))} disabled={busy}><span/></button><b>{isInStock(p)?'Stokda var':'Stokda yoxdur'}</b></div>
+          <div className="actions">
+           <button className="secondary" onClick={()=>{setEdit({...p,category:p.category||'',images:[...p.images],inStock:isInStock(p)});setFiles([])}}>Dəyiş</button>
           <button className="danger" onClick={()=>remove(p)} disabled={busy}>Sil</button>
          </div>
         </div>
@@ -154,11 +172,12 @@ export default function Admin(){
        <label>Endirimli qiymət
         <input type="number" min="0" step="0.01" value={edit.newPrice??''} onChange={e=>setEdit({...edit,newPrice:e.target.value===''?null:Number(e.target.value)})}/>
        </label>
+       <div className="wide stock-field"><span>Məhsulun mövcudluğu</span><button type="button" role="switch" aria-checked={isInStock(edit)} className={`stock-switch large ${isInStock(edit)?'active':''}`} onClick={()=>setEdit({...edit,inStock:!isInStock(edit)})}><span/></button><b>{isInStock(edit)?'Stokda var':'Stokda yoxdur'}</b></div>
        <label className="wide">Təsvir
-        <textarea value={edit.description} onChange={e=>setEdit({...edit,description:e.target.value})}/>
+        <textarea value={edit.description} maxLength={10000} onChange={e=>setEdit({...edit,description:e.target.value})}/>
        </label>
        <label className="wide">Keçid
-        <input value={edit.link} onChange={e=>setEdit({...edit,link:e.target.value})}/>
+        <input value={edit.link} maxLength={2048} onChange={e=>setEdit({...edit,link:e.target.value})}/>
        </label>
        <label className="wide">Şəkillər (maksimum 8; JPG, PNG, WEBP)
         <input type="file" accept="image/jpeg,image/png,image/webp" multiple onChange={e=>setFiles(Array.from(e.target.files||[]))}/>

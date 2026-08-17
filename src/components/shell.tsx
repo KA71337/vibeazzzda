@@ -23,7 +23,7 @@ export function Shell({children}:{children:React.ReactNode}){
   <header className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${compact?'pt-2':'pt-4 md:pt-6'}`}>
    <div className={`container transition-all duration-300 ${compact?'max-w-[1240px]':''}`}>
     <div className={`flex items-center justify-between gap-4 border border-black/10 bg-white/95 px-3 shadow-[0_12px_45px_rgba(0,0,0,.08)] backdrop-blur-xl transition-all duration-300 ${compact?'h-16 rounded-[1.25rem]':'h-[4.75rem] rounded-[1.5rem] md:px-5'}`}>
-     <Link href="/" className="flex shrink-0 items-center gap-3" aria-label="VIBE AZ — Ana səhifə"><Image src="/logo.jpeg" alt="VIBE AZ" width={48} height={48} className={`rounded-full object-cover transition-all ${compact?'h-10 w-10':'h-11 w-11'}`}/><span className="hidden text-sm font-black tracking-[.2em] sm:block">VIBE AZ</span></Link>
+     <Link href="/" className="flex shrink-0 items-center gap-3" aria-label={`VIBE AZ — ${t.home}`}><Image src="/logo.jpeg" alt="VIBE AZ" width={48} height={48} className={`rounded-full object-cover transition-all ${compact?'h-10 w-10':'h-11 w-11'}`}/><span className="hidden text-sm font-black tracking-[.2em] sm:block">VIBE AZ</span></Link>
      <nav className="hidden items-center gap-1 rounded-full bg-gray-50 p-1 md:flex">{nav.map(([h,n])=><Link key={h} href={h} className={`rounded-full px-4 py-2 text-sm font-semibold transition hover:bg-white hover:shadow-sm ${pathname===h?'bg-white shadow-sm':''}`}>{n}</Link>)}</nav>
      <div className="flex min-w-0 items-center gap-0.5">
       <button aria-label={t.searchTitle} onClick={()=>setSearchOpen(true)} className={`${iconButton} hidden min-[370px]:grid`}><Search size={19}/></button>

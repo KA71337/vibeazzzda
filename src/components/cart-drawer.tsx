@@ -4,6 +4,7 @@ import {AnimatePresence,motion} from 'framer-motion';
 import {ArrowRight,Minus,Plus,ShoppingBag,Trash2,X} from 'lucide-react';
 import {useEffect} from 'react';
 import {products} from '@/data/products';
+import {isInStock} from '@/lib/stock';
 import {priceOf,useStore} from './store';
 import {ProductImageFrame} from './product-image-frame';
 
@@ -63,10 +64,11 @@ export function CartDrawer() {
                     {items.map(({p, c}) => (
                       <li key={p.id} className="flex gap-3.5 rounded-3xl border border-black/5 p-3">
                         <Link href={`/product/${p.id}`} onClick={() => setDrawer(false)} className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-gray-50">
-                          <ProductImageFrame src={p.images[0]} alt={p.name} sizes="80px" className="object-contain p-1"/>
+                          <ProductImageFrame src={p.images[0]} alt={p.name} sizes="80px" variant="compact" inStock={isInStock(p)} statusLabel={t.outOfStock}/>
                         </Link>
                         <div className="min-w-0 flex-1">
                           <Link href={`/product/${p.id}`} onClick={() => setDrawer(false)} className="line-clamp-2 text-sm font-semibold">{p.name}</Link>
+                          {!isInStock(p)&&<span className="mt-1 inline-flex rounded-md bg-gray-200 px-2 py-1 text-[10px] font-bold text-gray-600">{t.outOfStock}</span>}
                           <div className="mt-1 flex items-baseline gap-2">
                             <b className="text-sm">{priceOf(p)} AZN</b>
                             {p.newPrice !== null && <s className="text-xs text-gray-400">{p.price} AZN</s>}
@@ -74,7 +76,7 @@ export function CartDrawer() {
                           <div className="mt-2 flex items-center gap-1.5">
                             <button aria-label="−" onClick={() => setQty(p.id, c.qty - 1)} className="grid h-8 w-8 place-items-center rounded-full border border-gray-200 transition hover:border-black"><Minus size={13}/></button>
                             <span className="w-7 text-center text-sm font-bold">{c.qty}</span>
-                            <button aria-label="+" onClick={() => setQty(p.id, c.qty + 1)} className="grid h-8 w-8 place-items-center rounded-full border border-gray-200 transition hover:border-black"><Plus size={13}/></button>
+                            <button disabled={!isInStock(p)} aria-label={t.increase} onClick={() => setQty(p.id, c.qty + 1)} className="grid h-8 w-8 place-items-center rounded-full border border-gray-200 transition hover:border-black disabled:cursor-not-allowed disabled:bg-gray-100 disabled:text-gray-300"><Plus size={13}/></button>
                             <button aria-label={t.remove} onClick={() => remove(p.id)} className="ml-auto rounded-full p-2 text-gray-400 transition hover:bg-gray-100 hover:text-black"><Trash2 size={16}/></button>
                           </div>
                         </div>

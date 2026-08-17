@@ -8,6 +8,7 @@ export type Product = {
   description: string;
   link: string;
   images: string[];
+  inStock: boolean;
   /**
    * One of the ids from `src/data/categories.ts`. Optional so that historical
    * snapshots (data/order-products.json) stay valid without a migration.
