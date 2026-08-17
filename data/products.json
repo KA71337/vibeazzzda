@@ -1366,5 +1366,18 @@
       "/products/image_00194.jpg"
     ],
     "category": "diger"
+  },
+  {
+    "id": 110,
+    "name": "Step",
+    "price": 49,
+    "newPrice": null,
+    "description": "Step platforması Ev şəraitində effektiv kardio və fitness məşqləri etmək üçün ideal aerobika stəp platforması satılır. Tam yenidir, orijinal qutusundadır.\nƏsas Xüsusiyyətlər:\nHündürlüyü Tənzimlənən: Platformanın hündürlüyü 10 sm və 15 sm olmaqla iki səviyyədə tənzimlənə bilər. Bu, məşqin çətinlik dərəcəsini fərdiləşdirməyə imkan verir.",
+    "link": "",
+    "images": [
+      "/products/admin/1786957636933-0-b7c81854-7c09-406b-8d20-89271b124c70.jpg",
+      "/products/admin/1786957636933-1-839cf1af-482c-4aee-81df-d60c9a34136d.jpg"
+    ],
+    "category": "agirliq"
   }
 ]
