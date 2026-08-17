@@ -1404,5 +1404,18 @@
       "/products/admin/1786957924321-0-2d2d720f-a1c3-465e-8fa6-ad352e69ffe4.jpg"
     ],
     "category": "oyun"
+  },
+  {
+    "id": 113,
+    "name": "Onurğa və bel dartma aparatı",
+    "price": 349,
+    "newPrice": null,
+    "description": "",
+    "link": "",
+    "images": [
+      "/products/admin/1786960493920-0-a84a3e0c-6cfe-4f49-9e55-598dfa35e270.jpg",
+      "/products/admin/1786960493921-1-763c80e7-09ee-437f-ade6-bd73d49cac9c.jpg"
+    ],
+    "category": "agirliq"
   }
 ]
