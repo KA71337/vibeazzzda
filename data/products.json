@@ -45,7 +45,7 @@
       "/products/image_00012.jpg"
     ],
     "category": "basketbol",
-    "inStock": true
+    "inStock": false
   },
   {
     "id": 5,
