@@ -1392,5 +1392,17 @@
       "/products/admin/1786957865894-1-bda7c7fc-0f8f-46b0-abc6-559fb4d7d1d2.jpg"
     ],
     "category": "agirliq"
+  },
+  {
+    "id": 112,
+    "name": "Şahmat saatı",
+    "price": 49,
+    "newPrice": null,
+    "description": "Şahmat Saatı Peşəkar Rəqəmsal Şahmat Saatı – LEAP (PQ9907S)\n\nOrijinal və yüksək keyfiyyətli LEAP (PQ9907S) rəqəmsal şahmat saatı / taymeri! Həm peşəkar turnirlər, həm də həvəskar şahmat həvəskarları, klublar və məktəblər üçün mükəmməl seçimdir. Şahmat, damka, nard, qo (Go) və digər bütün stolüstü oyunlarda dəqiq vaxt nəzarəti üçün istifadə olunur.\n\nÖzəllikləri və Üstünlükləri:\n• Dəqiq Hesablama: İki tərəfli müstəqil vaxt hesablama sistemi (Count-up və Count-down taymer funksiyaları).\n• Rahat İstifadə: Geniş və aydın LCD ekran, üst hissədə rahat basılan dayanıqlı düymə mexanizmi.\n• Funksionallıq: Oyun zamanı vaxtı dəyişmək, dayandırmaq (Pauza) və ya yenidən başlatmaq imkanı.\n• Səsli və Səssiz Rejim: İstəyə uyğun olaraq gediş vaxtı bitdikdə səsli xəbərdarlıq funksiyası.\n• Yığcam və Dözümlü: Yüksək keyfiyyətli plastik korpus, yüngül çəki və istənilən yerə rahat daşınma.\n• Enerji Qənaəti: Standart batareya ilə uzunmüddətli və problemsiz çalışır.\n\nÇatdırılma mövcuddur. Ətraflı məlumat və sifariş üçün zəng edin və ya WhatsApp vasitəsilə əlaqə saxlayın.",
+    "link": "",
+    "images": [
+      "/products/admin/1786957924321-0-2d2d720f-a1c3-465e-8fa6-ad352e69ffe4.jpg"
+    ],
+    "category": "oyun"
   }
 ]
