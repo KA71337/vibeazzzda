@@ -20,7 +20,6 @@ export default function sitemap():MetadataRoute.Sitemap{
   lastModified:updatedAt,
   changeFrequency:'weekly' as const,
   priority:.8,
-  images:product.images.map(image=>absoluteUrl(image)),
  }));
  return [
   {url:absoluteUrl('/'),lastModified:updatedAt,changeFrequency:'weekly',priority:1},

@@ -17,7 +17,7 @@ Audit date: 2026-08-18
 | Hreflang | N/A | AZ/RU/EN are client-side language variants without separate URL routes; no false hreflang URLs are emitted. Default language is AZ. |
 | Open Graph | PASS | Home, catalog/category and product metadata use the canonical URL, title, description and image. |
 | Organization Schema | PASS | Organization and WebSite JSON-LD use verified site/contact/social data only. |
-| Image SEO | PASS | Product images have descriptive alt text, stable dimensions/frames, Next Image optimization and sitemap image entries. |
+| Image SEO | PASS | Product images have descriptive alt text, stable dimensions/frames, Next Image optimization and Product JSON-LD image URLs. |
 | Internal Linking | PASS | Home -> category -> product links use stable slash-canonical routes; products link back to their category. |
 | Core Web Vitals | TECHNICAL PASS / FIELD DATA PENDING | Next Image optimization is enabled, image dimensions are constrained, local fonts are used and the production build succeeds. CrUX/PageSpeed field data is not available in this local audit. |
 
