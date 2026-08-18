@@ -31,16 +31,20 @@ const securityHeaders=[
 ];
 
 const nextConfig:NextConfig={
-  images:{unoptimized:true},
   trailingSlash:true,
   poweredByHeader:false,
   reactStrictMode:true,
   productionBrowserSourceMaps:false,
   turbopack:{root:process.cwd()},
+  async redirects(){return [
+    {source:'/:path*',has:[{type:'host',value:'vibe.az'}],destination:'https://vibeaz.org/:path*',permanent:true},
+    {source:'/:path*',has:[{type:'host',value:'vibeaz.vercel.app'}],destination:'https://vibeaz.org/:path*',permanent:true},
+    {source:'/:path*',has:[{type:'host',value:'vibeazzz.vercel.app'}],destination:'https://vibeaz.org/:path*',permanent:true},
+  ]},
   async headers(){return [
     {source:'/:path*',headers:securityHeaders},
     {source:'/admin/:path*',headers:[{key:'Cache-Control',value:'no-store, max-age=0, must-revalidate'},{key:'X-Robots-Tag',value:'noindex, nofollow, noarchive'}]},
-    {source:'/api/admin/:path*',headers:[{key:'Cache-Control',value:'no-store, max-age=0, must-revalidate'},{key:'Vary',value:'Cookie, Origin'}]},
+    {source:'/api/admin/:path*',headers:[{key:'Cache-Control',value:'no-store, max-age=0, must-revalidate'},{key:'Vary',value:'Cookie, Origin'},{key:'X-Robots-Tag',value:'noindex, nofollow, noarchive'}]},
   ]},
 };
 

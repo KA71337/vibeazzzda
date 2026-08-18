@@ -363,7 +363,7 @@ Payload находится после `#`, поэтому не отправля�
 
 ### Фаза F — SEO
 
-- `src/app/layout.tsx`: metadataBase для `https://vibe.az`, canonical/OG/Twitter defaults.
+- `src/app/layout.tsx`: metadataBase для `https://vibeaz.org`, canonical/OG/Twitter defaults.
 - `src/app/product/[id]/page.tsx`: `generateMetadata` по продукту; canonical и product image.
 - `src/app/robots.ts`: allow public content, disallow admin/API/cart/favorites/order as необходимо.
 - `src/app/sitemap.ts`: home/catalog/product URLs из `products`; категории добавлять только после создания реальных category routes либо использовать валидные catalog query URLs по согласованной canonical модели.

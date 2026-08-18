@@ -54,7 +54,7 @@ export function CartDrawer() {
                 <div>
                   <ShoppingBag size={40} className="mx-auto text-gray-300"/>
                   <p className="mt-4 text-gray-500">{t.emptyCart}</p>
-                  <Link href="/catalog" onClick={() => setDrawer(false)} className="btn btn-dark mt-6">{t.goCatalog}</Link>
+                  <Link href="/catalog/" onClick={() => setDrawer(false)} className="btn btn-dark mt-6">{t.goCatalog}</Link>
                 </div>
               </div>
             ) : (
@@ -63,11 +63,11 @@ export function CartDrawer() {
                   <ul className="grid gap-3">
                     {items.map(({p, c}) => (
                       <li key={p.id} className="flex gap-3.5 rounded-3xl border border-black/5 p-3">
-                        <Link href={`/product/${p.id}`} onClick={() => setDrawer(false)} className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-gray-50">
+                        <Link href={`/product/${p.id}/`} onClick={() => setDrawer(false)} className="relative h-20 w-20 shrink-0 overflow-hidden rounded-2xl bg-gray-50">
                           <ProductImageFrame src={p.images[0]} alt={p.name} sizes="80px" variant="compact" inStock={isInStock(p)} statusLabel={t.outOfStock}/>
                         </Link>
                         <div className="min-w-0 flex-1">
-                          <Link href={`/product/${p.id}`} onClick={() => setDrawer(false)} className="line-clamp-2 text-sm font-semibold">{p.name}</Link>
+                          <Link href={`/product/${p.id}/`} onClick={() => setDrawer(false)} className="line-clamp-2 text-sm font-semibold">{p.name}</Link>
                           {!isInStock(p)&&<span className="mt-1 inline-flex rounded-md bg-gray-200 px-2 py-1 text-[10px] font-bold text-gray-600">{t.outOfStock}</span>}
                           <div className="mt-1 flex items-baseline gap-2">
                             <b className="text-sm">{priceOf(p)} AZN</b>
@@ -89,7 +89,7 @@ export function CartDrawer() {
                     <span className="text-gray-500">{t.total}</span>
                     <b className="text-2xl tracking-tight">{total} AZN</b>
                   </div>
-                  <Link href="/cart" onClick={() => setDrawer(false)} className="btn btn-dark mt-4 w-full">{t.getLink} <ArrowRight size={17}/></Link>
+                  <Link href="/cart/" onClick={() => setDrawer(false)} className="btn btn-dark mt-4 w-full">{t.getLink} <ArrowRight size={17}/></Link>
                   <button onClick={() => setDrawer(false)} className="mt-2 w-full py-2 text-sm font-semibold text-gray-500 transition hover:text-black">{t.continueShopping}</button>
                 </footer>
               </>

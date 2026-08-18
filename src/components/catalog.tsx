@@ -1,23 +1,26 @@
 'use client';
 import {AnimatePresence,motion} from 'framer-motion';
 import {useEffect,useMemo,useState} from 'react';
+import {useRouter} from 'next/navigation';
 import {LayoutGrid,Search,SlidersHorizontal,X} from 'lucide-react';
 import {products} from '@/data/products';
 import {categories} from '@/data/categories';
 import {ProductCard} from './product-card';
 import {Select} from './select';
 import {useStore} from './store';
+import {categoryPath} from '@/lib/seo';
 
-export function Catalog({limit}:{limit?:number}){
- const{t,lang}=useStore();
- const[q,setQ]=useState(''),[min,setMin]=useState(''),[max,setMax]=useState(''),[sort,setSort]=useState('new'),[cat,setCat]=useState(''),[sheet,setSheet]=useState(false);
- useEffect(()=>{const category=new URLSearchParams(location.search).get('category')||'';if(categories.some(c=>c.id===category))setCat(category)},[]);
+export function Catalog({limit,initialCategory}:{limit?:number;initialCategory?:string}){
+ const{t,lang}=useStore(),router=useRouter();
+ const[q,setQ]=useState(''),[min,setMin]=useState(''),[max,setMax]=useState(''),[sort,setSort]=useState('new'),[cat,setCat]=useState(initialCategory||''),[sheet,setSheet]=useState(false);
+ useEffect(()=>{if(initialCategory)return;const category=new URLSearchParams(location.search).get('category')||'';if(categories.some(c=>c.id===category))setCat(category)},[initialCategory]);
  useEffect(()=>{document.body.classList.toggle('overlay-open',sheet);return()=>document.body.classList.remove('overlay-open')},[sheet]);
  const catOptions=useMemo(()=>{const used=new Set(products.map(p=>p.category).filter(Boolean));return [{value:'',label:t.allCategories},...categories.filter(c=>used.has(c.id)).map(c=>({value:c.id,label:c[lang]}))]},[t,lang]);
  const sortOptions=useMemo(()=>[{value:'new',label:t.sortNew},{value:'low',label:t.sortLow},{value:'high',label:t.sortHigh}],[t]);
  const list=useMemo(()=>{const x=products.filter(p=>(p.name+' '+p.description).toLowerCase().includes(q.toLowerCase())&&(!min||p.price>=+min)&&(!max||p.price<=+max)&&(!cat||p.category===cat));if(sort==='low')x.sort((a,b)=>a.price-b.price);if(sort==='high')x.sort((a,b)=>b.price-a.price);if(sort==='new')x.sort((a,b)=>b.id-a.id);return limit?x.slice(0,limit):x},[q,min,max,sort,cat,limit]);
- const reset=()=>{setMin('');setMax('');setSort('new');setCat('')};
- const controls=<><Select value={cat} onChange={setCat} options={catOptions} label={t.category} placeholder={t.allCategories} icon={<LayoutGrid size={17}/>}/><Select value={sort} onChange={setSort} options={sortOptions} label={t.sort} icon={<SlidersHorizontal size={17}/>}/><div className="grid grid-cols-2 gap-2"><label className="rounded-[1.15rem] bg-white px-4 py-2 shadow-sm"><span className="block text-[10px] font-bold uppercase tracking-wider text-gray-400">{t.priceMin} · AZN</span><input value={min} onChange={e=>setMin(e.target.value)} type="number" inputMode="numeric" placeholder="0" aria-label={t.priceMin} className="mt-1 w-full bg-transparent text-sm font-semibold outline-none"/></label><label className="rounded-[1.15rem] bg-white px-4 py-2 shadow-sm"><span className="block text-[10px] font-bold uppercase tracking-wider text-gray-400">{t.priceMax} · AZN</span><input value={max} onChange={e=>setMax(e.target.value)} type="number" inputMode="numeric" placeholder="∞" aria-label={t.priceMax} className="mt-1 w-full bg-transparent text-sm font-semibold outline-none"/></label></div></>;
+ const changeCategory=(value:string)=>{setCat(value);if(initialCategory!==undefined)router.push(value?categoryPath(value):'/catalog/')};
+ const reset=()=>{setMin('');setMax('');setSort('new');changeCategory('')};
+ const controls=<><Select value={cat} onChange={changeCategory} options={catOptions} label={t.category} placeholder={t.allCategories} icon={<LayoutGrid size={17}/>}/><Select value={sort} onChange={setSort} options={sortOptions} label={t.sort} icon={<SlidersHorizontal size={17}/>}/><div className="grid grid-cols-2 gap-2"><label className="rounded-[1.15rem] bg-white px-4 py-2 shadow-sm"><span className="block text-[10px] font-bold uppercase tracking-wider text-gray-400">{t.priceMin} · AZN</span><input value={min} onChange={e=>setMin(e.target.value)} type="number" inputMode="numeric" placeholder="0" aria-label={t.priceMin} className="mt-1 w-full bg-transparent text-sm font-semibold outline-none"/></label><label className="rounded-[1.15rem] bg-white px-4 py-2 shadow-sm"><span className="block text-[10px] font-bold uppercase tracking-wider text-gray-400">{t.priceMax} · AZN</span><input value={max} onChange={e=>setMax(e.target.value)} type="number" inputMode="numeric" placeholder="∞" aria-label={t.priceMax} className="mt-1 w-full bg-transparent text-sm font-semibold outline-none"/></label></div></>;
  return <>
   <div className="mb-8 rounded-[2rem] border border-black/5 bg-[#f5f5f3] p-3 sm:p-4">
    <div className="flex gap-2"><label className="flex min-h-14 flex-1 items-center gap-3 rounded-[1.15rem] bg-white px-4 shadow-sm"><Search size={18} className="shrink-0 text-gray-400"/><input value={q} onChange={e=>setQ(e.target.value)} placeholder={t.search} className="h-12 w-full min-w-0 bg-transparent text-sm outline-none"/>{q&&<button aria-label={t.reset} onClick={()=>setQ('')}><X size={16}/></button>}</label>{!limit&&<button onClick={()=>setSheet(true)} className="flex min-h-14 items-center gap-2 rounded-[1.15rem] bg-black px-4 text-sm font-bold text-white md:hidden"><SlidersHorizontal size={17}/>{t.filters}</button>}</div>

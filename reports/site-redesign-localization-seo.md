@@ -8,7 +8,7 @@
 - Локализованы публичные shell/header/footer, главная, каталог/фильтры/поиск, карточки и product detail, favorites, cart/drawer и toast-тексты. Названия и описания товаров не переводятся.
 - Mobile navigation закреплена снизу с Lucide, active state, cart badge, 48px touch targets и `safe-area-inset-bottom`.
 - Mobile header сохранён компактным; search и cart drawer работают fullscreen, filter — bottom sheet. Добавлены ограничения против горизонтального overflow.
-- Настроены `metadataBase=https://vibe.az`, title template, description, canonical, Open Graph, Twitter и `/logo.jpeg`.
+- Настроены `metadataBase=https://vibeaz.org`, title template, description, canonical, Open Graph, Twitter и `/logo.jpeg`.
 - Добавлены `robots.ts` (`/robots.txt`) с закрытием `/admin/` и `/api/` и ссылкой на sitemap.
 - Добавлен динамический `sitemap.ts` (`/sitemap.xml`): home, catalog, все категории и все product routes из `data/products.json`.
 - Для product pages добавлены безопасные динамические metadata, canonical, OG/Twitter image и Product JSON-LD.

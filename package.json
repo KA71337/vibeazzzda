@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint src next.config.ts postcss.config.mjs",
     "typecheck": "tsc --noEmit",
+    "seo:check": "node scripts/seo-audit.mjs",
     "test": "node --no-warnings --test tests/*.test.mjs",
     "security:smoke": "node scripts/security-smoke.mjs"
   },

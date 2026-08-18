@@ -48,8 +48,8 @@ Production build и HTTP smoke-проверки пройдены. Провере
 | Admin hidden route | PASS | `/admin/` returns 200, public Shell excluded, admin `noindex,nofollow` |
 | Admin auth/config assumptions | PASS | Status reports missing `ADMIN_PASSWORD`, `SESSION_SECRET`, `GITHUB_TOKEN`, `GITHUB_OWNER`, `GITHUB_REPO`; no secret values exposed |
 | Admin CRUD/upload contracts | PASS (non-destructive audit) | UI still uses session status, CSRF header, multipart FormData, revision, POST/PATCH/DELETE and upload fields; destructive calls intentionally not executed |
-| Root SEO | PASS | title, description, canonical `https://vibe.az/`, OG, Twitter and logo image observed in production HTML |
-| Catalog SEO | PASS после исправления | Route title/description, canonical `https://vibe.az/catalog/`, OG/Twitter added |
+| Root SEO | PASS | title, description, canonical `https://vibeaz.org/`, OG, Twitter and logo image observed in production HTML |
+| Catalog SEO | PASS после исправления | Route title/description, canonical `https://vibeaz.org/catalog/`, OG/Twitter added |
 | Product SEO | PASS | Dynamic title/description/canonical/OG/Twitter image and Product JSON-LD observed for `/product/2/` |
 | `/robots.txt` | PASS | Allow `/`; disallow `/admin/`, `/api/`; host and sitemap correct |
 | `/sitemap.xml` | PASS | 125/125 unique URLs; all 108 products plus 15 categories, home and catalog |
@@ -66,9 +66,9 @@ Production build и HTTP smoke-проверки пройдены. Провере
 
 ## SEO HTTP outputs
 
-- `/`: `VIBE AZ — Müasir seçim, real keyfiyyət`, canonical `https://vibe.az/`, OG/Twitter присутствуют.
-- `/catalog/`: `Kataloq | VIBE AZ`, canonical `https://vibe.az/catalog/`, route-specific description/OG/Twitter.
-- `/product/2/`: `Rolik Lescaul | VIBE AZ`, canonical `https://vibe.az/product/2/`, product image OG/Twitter.
+- `/`: `VIBE AZ — Müasir seçim, real keyfiyyət`, canonical `https://vibeaz.org/`, OG/Twitter присутствуют.
+- `/catalog/`: `Kataloq | VIBE AZ`, canonical `https://vibeaz.org/catalog/`, route-specific description/OG/Twitter.
+- `/product/2/`: `Rolik Lescaul | VIBE AZ`, canonical `https://vibeaz.org/product/2/`, product image OG/Twitter.
 - `/robots.txt`: корректный plain-text output.
 - `/sitemap.xml`: корректный XML, 125 уникальных `<loc>`.
 

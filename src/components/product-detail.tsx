@@ -1,5 +1,6 @@
 'use client';
 import {motion} from 'framer-motion';
+import Link from 'next/link';
 import {useRouter} from 'next/navigation';
 import {useMemo,useState} from 'react';
 import {Check,Heart,Minus,Plus,ShieldCheck,ShoppingBag,Truck,Zap} from 'lucide-react';
@@ -8,6 +9,8 @@ import {isInStock} from '@/lib/stock';
 import {useStore} from './store';
 import {ProductImage} from './product-image';
 import {StockOverlay,stockImageClass} from './stock-status';
+import {categoryLabel} from '@/data/categories';
+import {categoryPath} from '@/lib/seo';
 
 /**
  * Height budget for a portrait frame. A tall photo trades width for height inside it instead of
@@ -29,15 +32,19 @@ const INVISIBLE=/[\u200b-\u200f\u2060\ufeff]/g;
 /** Scraped descriptions are one spec per line, so every line becomes its own paragraph. */
 const paragraphs=(text:string)=>text.split('\n').map(l=>l.replace(INVISIBLE,'').trim()).filter(Boolean);
 
-export function ProductDetail({p}:{p:Product}){
+export function ProductDetail({p,categoryId}:{p:Product;categoryId?:string}){
  const[img,setImg]=useState(0),[qty,setQty]=useState(1),[ratios,setRatios]=useState<Record<number,number>>({});
- const{add,toggleFav,favorites,t}=useStore(),router=useRouter(),fav=favorites.includes(p.id);
+ const{add,toggleFav,favorites,t,lang}=useStore(),router=useRouter(),fav=favorites.includes(p.id);
  const available=isInStock(p),addQuantity=()=>available&&add(p,qty);
  const many=p.images.length>1,{aspectRatio,maxWidth}=frame(ratios[img]);
  const lines=useMemo(()=>paragraphs(p.description),[p.description]);
+ const categoryName=categoryLabel(categoryId,lang)||t.category;
  // Long spec sheets read as two columns on desktop; short blurbs stay a single column.
  const twoCol=p.description.length>700;
  return <section className="container pb-14 pt-4 sm:pb-20 sm:pt-8">
+  <nav aria-label={t.navigation} className="mb-6 overflow-x-auto text-sm text-gray-500 sm:mb-8">
+   <ol className="flex min-w-max items-center gap-2"><li><Link href="/" className="transition hover:text-black">{t.home}</Link></li><li aria-hidden="true">/</li><li><Link href="/catalog/" className="transition hover:text-black">{t.catalog}</Link></li>{categoryId&&<><li aria-hidden="true">/</li><li><Link href={categoryPath(categoryId)} className="transition hover:text-black">{categoryName}</Link></li></>}<li aria-hidden="true">/</li><li aria-current="page" className="max-w-[16rem] truncate font-semibold text-black">{p.name}</li></ol>
+  </nav>
   <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.18fr)_minmax(370px,.82fr)] lg:gap-10 xl:gap-14">
    <div data-gallery className="min-w-0">
     <div className="mx-auto w-full" style={{maxWidth}}>
@@ -47,7 +54,7 @@ export function ProductDetail({p}:{p:Product}){
       {many&&<span className="absolute bottom-3 right-3 z-20 rounded-full bg-white/85 px-3 py-1.5 text-xs font-bold shadow-sm backdrop-blur sm:bottom-4 sm:right-4">{img+1} / {p.images.length}</span>}
      </motion.div>
      {/* Scrolls sideways on phones; wraps on desktop so the last thumbnail is never sliced off. */}
-     {many&&<div className="nice-scroll -mx-1 mt-3 flex snap-x snap-mandatory gap-2.5 overflow-x-auto px-1 pb-2 sm:mt-4 sm:flex-wrap sm:snap-none sm:gap-3 sm:overflow-visible sm:pb-0">{p.images.map((x,i)=><button key={`${x}-${i}`} onClick={()=>setImg(i)} aria-label={`${p.name}, ${t.image.toLocaleLowerCase()} ${i+1}`} aria-pressed={i===img} className={`relative h-[68px] w-[68px] shrink-0 snap-start overflow-hidden rounded-2xl border bg-white transition sm:h-[84px] sm:w-[84px] ${i===img?'border-black ring-1 ring-black':'border-black/10 opacity-60 hover:opacity-100'}`}><ProductImage src={x} alt="" sizes="84px" className={`object-contain p-1 ${stockImageClass(available)}`}/></button>)}</div>}
+      {many&&<div className="nice-scroll -mx-1 mt-3 flex snap-x snap-mandatory gap-2.5 overflow-x-auto px-1 pb-2 sm:mt-4 sm:flex-wrap sm:snap-none sm:gap-3 sm:overflow-visible sm:pb-0">{p.images.map((x,i)=><button key={`${x}-${i}`} onClick={()=>setImg(i)} aria-label={`${p.name}, ${t.image.toLocaleLowerCase()} ${i+1}`} aria-pressed={i===img} className={`relative h-[68px] w-[68px] shrink-0 snap-start overflow-hidden rounded-2xl border bg-white transition sm:h-[84px] sm:w-[84px] ${i===img?'border-black ring-1 ring-black':'border-black/10 opacity-60 hover:opacity-100'}`}><ProductImage src={x} alt={`${p.name}, ${t.image.toLocaleLowerCase()} ${i+1}`} sizes="84px" className={`object-contain p-1 ${stockImageClass(available)}`}/></button>)}</div>}
     </div>
    </div>
    <aside data-info className="min-w-0 lg:sticky lg:top-24">
