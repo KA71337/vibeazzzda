@@ -1,7 +1,7 @@
 import {randomUUID} from 'node:crypto';
 
 export const MAX_FILES=8,MAX_FILE=3_145_728,MAX_TOTAL=4_194_304,MAX_IMAGES=20;
-const PRODUCT_KEYS=new Set(['id','name','price','newPrice','description','link','images','category','inStock','stock']);
+const PRODUCT_KEYS=new Set(['id','name','price','newPrice','description','link','images','category','inStock']);
 const UNSAFE_CONTROL=/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/;
 
 export class ValidationError extends Error {
@@ -9,7 +9,7 @@ export class ValidationError extends Error {
 }
 
 export type ValidatedProduct={
- id:number;name:string;price:number;newPrice:number|null;description:string;link:string;images:string[];category?:string;inStock:boolean;stock?:number;
+ id:number;name:string;price:number;newPrice:number|null;description:string;link:string;images:string[];category?:string;inStock:boolean;
 };
 
 type ProductOptions={allowLegacyStock?:boolean};
@@ -44,14 +44,11 @@ export function validateProductInput(value:unknown,categoryIds:readonly string[]
  if(typeof input.description!=='string'||input.description.length>10000||UNSAFE_CONTROL.test(input.description))throw new ValidationError('Təsviri yoxlayın');
  if(typeof input.link!=='string'||input.link.length>2048||input.link!==input.link.trim()||!isSafeLink(input.link))throw new ValidationError('Yolverilməz keçid');
  if(!Array.isArray(input.images)||input.images.length>MAX_IMAGES||input.images.some(image=>typeof image!=='string'||image.length>2048||image!==image.trim()||!isSafeImage(image)))throw new ValidationError('Yolverilməz şəkillər');
-  const category=input.category===undefined||input.category===null||input.category===''?undefined:input.category;
-  if(category!==undefined&&(typeof category!=='string'||!categoryIds.includes(category)))throw new ValidationError('Yolverilməz kateqoriya');
-  const rawStock=input.stock;
-  if(rawStock!==undefined&&(!Number.isSafeInteger(rawStock)||typeof rawStock!=='number'||rawStock<0||rawStock>1e9))throw new ValidationError('Stok sayı müsbət tam ədəd olmalıdır');
-  const stock=rawStock===undefined?undefined:rawStock as number;
-  const inStock=stock===undefined?(input.inStock===undefined&&options.allowLegacyStock?true:input.inStock):stock>0;
-  if(typeof inStock!=='boolean')throw new ValidationError('Stok statusunu yoxlayın');
-  return {id:input.id as number,name:input.name.trim(),price:input.price,newPrice:input.newPrice as number|null,description:input.description,link:input.link,images:[...input.images] as string[],...(category?{category}:{}),...(stock===undefined?{}:{stock}),inStock};
+ const category=input.category===undefined||input.category===null||input.category===''?undefined:input.category;
+ if(category!==undefined&&(typeof category!=='string'||!categoryIds.includes(category)))throw new ValidationError('Yolverilməz kateqoriya');
+ const inStock=input.inStock===undefined&&options.allowLegacyStock?true:input.inStock;
+ if(typeof inStock!=='boolean')throw new ValidationError('Stok statusunu yoxlayın');
+ return {id:input.id as number,name:input.name.trim(),price:input.price,newPrice:input.newPrice as number|null,description:input.description,link:input.link,images:[...input.images] as string[],...(category?{category}:{}),inStock};
 }
 
 export function validateCatalogInput(value:unknown,categoryIds:readonly string[]):ValidatedProduct[]{

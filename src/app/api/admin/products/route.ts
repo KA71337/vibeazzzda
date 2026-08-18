@@ -1,8 +1,6 @@
 import {NextRequest,NextResponse} from 'next/server';
-import {atomicCommit,readProducts,readSales} from '@/server/github';
+import {atomicCommit,readProducts} from '@/server/github';
 import {getCatalogConfig} from '@/server/config';
-import {getStock} from '@/lib/stock';
-import {appendManualStockChange} from '@/server/pos-core';
 import {MAX_IMAGES,ValidationError,validateFiles,validateProduct} from '@/server/products-validation';
 import {bodyTooLarge,clientKey,currentSession,noStore,protectMutation,throttle} from '@/server/security';
 
@@ -78,7 +76,7 @@ async function mutate(request:NextRequest,operation:'create'|'update'|'delete'){
   const current=await readProducts(),config=getCatalogConfig();
   if(!config)throw requestError('Kataloq serverdə konfiqurasiya edilməyib',503);
   if(current.revision!==expected)throw requestError('Kataloq dəyişdirilib. Səhifəni yeniləyin.',409);
-  let list=[...current.products];const extra:{path:string;content?:Uint8Array|string;delete?:boolean}[]=[];
+  let list=[...current.products];const extra:{path:string;content?:Uint8Array;delete?:boolean}[]=[];
   if(operation==='delete'){
    const id=parseDeleteId(raw),removed=list.find(product=>product.id===id);
    if(!removed)throw requestError('Məhsul tapılmadı',404);
@@ -95,11 +93,6 @@ async function mutate(request:NextRequest,operation:'create'|'update'|'delete'){
    const previous=index===-1?null:list[index];
    list=operation==='create'?[...list,product]:list.map(item=>item.id===product.id?product:item);
    if(previous){const used=new Set(list.flatMap(item=>item.images));for(const url of previous.images){const path=managedPath(url,config.managedPrefix);if(path&&!used.has(url))extra.push({path,delete:true})}}
-   const before=previous?(getStock(previous)??null):null,after=getStock(product);
-   if(after!==undefined&&before!==after){
-    const sales=await readSales(current.revision),store=appendManualStockChange(sales.store,product,before,after);
-    extra.push({path:config.salesPath,content:JSON.stringify(store,null,2)+'\n'});
-   }
   }
   list.sort((left,right)=>left.id-right.id);
   const revision=await atomicCommit(expected,list,extra,`admin: ${operation} product ${operation==='delete'?parseDeleteId(raw):validateProduct(raw).id}`);

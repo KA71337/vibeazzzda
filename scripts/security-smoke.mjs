@@ -22,9 +22,6 @@ assert.equal(unauthorized.response.status,401);
 const invalidSession=await request('/api/admin/products',{headers:{Cookie:'vibe_admin_session=invalid'}});
 assert.equal(invalidSession.response.status,401);
 
-const unauthorizedSales=await request('/api/admin/sales');
-assert.equal(unauthorizedSales.response.status,401);
-
 const crossOrigin=await request('/api/admin/auth/login',{method:'POST',headers:{Origin:'https://evil.example','Content-Type':'application/json'},body:JSON.stringify({password:'test'})});
 assert.equal(crossOrigin.response.status,403);
 
@@ -33,9 +30,6 @@ assert.equal(malformedLogin.response.status,400);
 
 const mutation=await request('/api/admin/products',{method:'POST',headers:{Origin:sameOrigin,'x-csrf-token':'invalid'},body:new FormData()});
 assert.equal(mutation.response.status,403);
-
-const salesMutation=await request('/api/admin/sales',{method:'POST',headers:{Origin:sameOrigin,'Content-Type':'application/json','x-csrf-token':'invalid'},body:JSON.stringify({items:[{productId:1,quantity:1}]})});
-assert.equal(salesMutation.response.status,403);
 
 const home=await fetch(`${base}/`);
 assert.match(home.headers.get('content-security-policy')||'',/default-src 'self'/);

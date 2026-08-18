@@ -9,8 +9,6 @@ export type Product = {
   link: string;
   images: string[];
   inStock: boolean;
-  /** Optional tracked quantity. Legacy catalog entries only have inStock. */
-  stock?: number;
   /**
    * One of the ids from `src/data/categories.ts`. Optional so that historical
    * snapshots (data/order-products.json) stay valid without a migration.
