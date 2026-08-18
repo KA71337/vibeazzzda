@@ -1,5 +1,16 @@
 {
   "nextSaleId": 1001,
   "sales": [],
-  "stockHistory": []
+  "stockHistory": [
+    {
+      "id": "ace9bc02-f19f-4fa8-800a-2fe250426006",
+      "createdAt": "2026-08-18T19:37:48.525Z",
+      "timezone": "Asia/Baku",
+      "productId": 2,
+      "productName": "Rolik Lescaul",
+      "from": null,
+      "to": 15,
+      "reason": "manual"
+    }
+  ]
 }
