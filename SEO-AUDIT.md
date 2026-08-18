@@ -83,4 +83,17 @@ npm run build           PASS
 node scripts/seo-audit.mjs --http=http://127.0.0.1:3102  PASS (129/129)
 ```
 
-Production URLs are rechecked after each Vercel deployment: `/robots.txt`, `/sitemap.xml`, representative home/category/product pages and `/google714a63d792693c9a.html`.
+The security smoke test was run against the local production server with `node scripts/security-smoke.mjs http://127.0.0.1:3102`.
+
+## Production Verification
+
+Deployment from commit `032c085` is live on Vercel and the custom domain:
+
+- `https://vibeaz.org/robots.txt` -> HTTP 200; exact required directives; no `Host`, old domain or Vercel host.
+- `https://vibeaz.org/sitemap.xml` -> HTTP 200; 129 `<loc>` entries; 0 legacy hosts, query URLs, admin/API URLs or localhost references.
+- `node scripts/seo-audit.mjs --http=https://vibeaz.org` -> `129/129 public URLs passed`.
+- Representative home, catalog, category and product pages -> HTTP 200 with canonical URLs on `vibeaz.org`, unique metadata and one H1.
+- `https://vibeaz.org/cart/` and `/order/` -> HTTP 200 with `noindex`; `/contact/` intentionally does not exist because contact is the `/#contact` section on the home page.
+- `https://vibeaz.org/google714a63d792693c9a.html` -> HTTP 200 and exact content `google-site-verification: google714a63d792693c9a.html`.
+
+The production Google verification file remains permanently tracked at `public/google714a63d792693c9a.html`.
