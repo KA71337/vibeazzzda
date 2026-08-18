@@ -1,9 +1,9 @@
 import type {MetadataRoute} from 'next';
-import {SITE_DESCRIPTION,SITE_NAME,SITE_URL} from '@/lib/seo';
+import {SITE_DESCRIPTION,SITE_NAME,SITE_TITLE,SITE_URL} from '@/lib/seo';
 
 export default function manifest():MetadataRoute.Manifest{
  return {
-  name:'VIBE AZ — İdman və Əyləncə Məhsulları Azərbaycanda',
+  name:SITE_TITLE,
   short_name:SITE_NAME,
   description:SITE_DESCRIPTION,
   id:'/',

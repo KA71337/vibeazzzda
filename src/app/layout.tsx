@@ -3,22 +3,20 @@ import './globals.css';
 import {StoreProvider} from '@/components/store';
 import {Shell} from '@/components/shell';
 import {INSTAGRAM_URL,TIKTOK_URL,WHATSAPP_URL} from '@/components/social';
-import {absoluteUrl,ORGANIZATION_ID,SITE_DESCRIPTION,SITE_KEYWORDS,SITE_LOCALE,SITE_NAME,SITE_URL,safeJsonLd} from '@/lib/seo';
-
-const siteTitle='VIBE AZ — İdman və Əyləncə Məhsulları Azərbaycanda';
+import {absoluteUrl,ORGANIZATION_ID,SITE_ALTERNATE_NAMES,SITE_DESCRIPTION,SITE_KEYWORDS,SITE_LOCALE,SITE_NAME,SITE_TITLE,SITE_URL,safeJsonLd} from '@/lib/seo';
 
 export const metadata:Metadata={
  metadataBase:new URL(SITE_URL),
- title:{default:siteTitle,template:'%s | VIBE AZ'},
+ title:{default:SITE_TITLE,template:'%s | VIBE AZ'},
  description:SITE_DESCRIPTION,
  keywords:SITE_KEYWORDS,
  alternates:{canonical:SITE_URL},
  icons:{
   icon:[
-   {url:'/favicon.ico',type:'image/x-icon',sizes:'any'},
    {url:'/favicon-48.png',type:'image/png',sizes:'48x48'},
    {url:'/favicon-96.png',type:'image/png',sizes:'96x96'},
    {url:'/favicon-144.png',type:'image/png',sizes:'144x144'},
+   {url:'/favicon.ico',type:'image/x-icon',sizes:'any'},
   ],
   shortcut:{url:'/favicon-48.png',type:'image/png',sizes:'48x48'},
   apple:{url:'/apple-touch-icon.png',type:'image/png',sizes:'180x180'},
@@ -29,11 +27,11 @@ export const metadata:Metadata={
   locale:SITE_LOCALE,
   url:SITE_URL,
   siteName:SITE_NAME,
-  title:siteTitle,
+  title:SITE_TITLE,
   description:SITE_DESCRIPTION,
   images:[{url:absoluteUrl('/logo.jpeg'),width:800,height:800,alt:'VIBE AZ loqosu'}],
  },
- twitter:{card:'summary_large_image',title:siteTitle,description:SITE_DESCRIPTION,images:[absoluteUrl('/logo.jpeg')]},
+ twitter:{card:'summary_large_image',title:SITE_TITLE,description:SITE_DESCRIPTION,images:[absoluteUrl('/logo.jpeg')]},
  robots:{index:true,follow:true,googleBot:{index:true,follow:true}},
 };
 
@@ -42,10 +40,14 @@ const organizationJsonLd={
  '@type':'Organization',
  '@id':ORGANIZATION_ID,
  name:SITE_NAME,
+ alternateName:[...SITE_ALTERNATE_NAMES],
  url:SITE_URL,
  logo:absoluteUrl('/logo.jpeg'),
  description:SITE_DESCRIPTION,
- areaServed:{'@type':'Country',name:'Azerbaijan'},
+ areaServed:[
+  {'@type':'Country',name:'Azerbaijan'},
+  {'@type':'City',name:'Baku',containedInPlace:{'@type':'Country',name:'Azerbaijan'}},
+ ],
  contactPoint:[
   {
    '@type':'ContactPoint',
@@ -64,6 +66,7 @@ const websiteJsonLd={
  '@id':`${SITE_URL}/#website`,
  url:SITE_URL,
  name:SITE_NAME,
+ alternateName:[...SITE_ALTERNATE_NAMES],
  inLanguage:SITE_LOCALE,
  publisher:{'@id':ORGANIZATION_ID},
 };

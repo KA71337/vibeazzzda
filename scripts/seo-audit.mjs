@@ -71,7 +71,7 @@ if(base){
   const home=await fetchText(`${base}/`);
   if(home.response.status!==200)fail(`home status ${home.response.status}`);
   const homeKeywords=meta(home.text,'keywords').toLowerCase();
-  for(const term of ['vibe az','vibe az baki','vibe az baku','vibe az bakı']){
+  for(const term of ['vibe az','vibe az baki','vibe az baku','vibe az bakı','vibeaz baki','vibeaz baku','vibaz baku']){
    if(!homeKeywords.includes(term))fail(`home keywords missing: ${term}`);
   }
   const homeDescription=meta(home.text,'description').toLowerCase();
@@ -81,7 +81,13 @@ if(base){
    if(!homeOgDescription.includes(term))fail(`home Open Graph description missing: ${term}`);
   }
   const homeVisibleText=home.text.toLocaleLowerCase('az');
-  if(!homeVisibleText.includes('vibe az bakı')||!homeVisibleText.includes('vibe az baku'))fail('home visible local brand phrase missing');
+  if(!homeVisibleText.includes('vibe az bakı')||!homeVisibleText.includes('vibe az baku')||!homeVisibleText.includes('vibeaz.org'))fail('home visible local brand phrase missing');
+  const homeSchemas=jsonLdBlocks(home.text);
+  for(const type of ['Organization','WebSite']){
+   const schema=homeSchemas.find(block=>block['@type']===type);
+   const names=Array.isArray(schema?.alternateName)?schema.alternateName:[];
+   if(!names.includes('VIBEAZ'))fail(`${type} alternateName missing: VIBEAZ`);
+  }
   if(!/<link[^>]+rel=["'](?:shortcut )?icon["'][^>]+favicon-(?:48|96|144)\.png/i.test(home.text))fail('home favicon link missing');
   if(!/<link[^>]+rel=["']apple-touch-icon["'][^>]+apple-touch-icon\.png/i.test(home.text))fail('home apple-touch-icon link missing');
   if(!/<link[^>]+rel=["']manifest["'][^>]+manifest\.webmanifest/i.test(home.text))fail('home manifest link missing');
