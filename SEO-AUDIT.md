@@ -59,6 +59,8 @@ The old sitemap/robots origin caused the previous 129 Search Console errors. All
 
 Permanent host redirects are configured for the legacy aliases `vibe.az`, `vibeaz.vercel.app` and `vibeazzz.vercel.app`. These aliases appear only in redirect configuration, not in SEO output. The `vibe.az.official` strings retained in social profile URLs are external account handles, not site hosts.
 
+Direct production probes show that `vibe.az` has no DNS record, `vibeazzz.vercel.app` returns Vercel `DEPLOYMENT_NOT_FOUND`, and `vibeaz.vercel.app` is not routed to this VIBE AZ deployment. A host redirect can run only after an alias is attached to the current Vercel project; attaching any externally managed legacy alias therefore requires Vercel account-level domain configuration. This does not affect the production canonical domain or generated SEO output.
+
 ## Fixed
 
 - Replaced the legacy robots sitemap and removed the obsolete `Host` directive.
