@@ -19,8 +19,8 @@
       "/products/image_00010.jpg"
     ],
     "category": "rolik",
-    "stock": 15,
-    "inStock": true
+    "stock": 0,
+    "inStock": false
   },
   {
     "id": 3,

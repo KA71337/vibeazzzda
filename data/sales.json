@@ -11,6 +11,16 @@
       "from": null,
       "to": 15,
       "reason": "manual"
+    },
+    {
+      "id": "41afd02f-56a1-4e4a-881b-14676300ceab",
+      "createdAt": "2026-08-18T19:38:07.862Z",
+      "timezone": "Asia/Baku",
+      "productId": 2,
+      "productName": "Rolik Lescaul",
+      "from": 15,
+      "to": 0,
+      "reason": "manual"
     }
   ]
 }
