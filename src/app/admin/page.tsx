@@ -1,13 +1,16 @@
 'use client';
 /* eslint-disable @next/next/no-img-element -- Admin previews support blob URLs and validated external catalog images. */
 import {useCallback,useEffect,useMemo,useState} from 'react';
+import {BarChart3,Boxes,LayoutGrid,LogOut,Plus,ReceiptText,ShoppingCart} from 'lucide-react';
 import type {Product} from '@/data/products';
 import {categories,categoryLabel} from '@/data/categories';
-import {isInStock} from '@/lib/stock';
+import {getStock,isInStock} from '@/lib/stock';
+import {AdminPos,type AdminSection} from '@/components/admin-pos';
 import './admin.css';
 
 type State={authenticated:boolean;configured:boolean;catalogConfigured?:boolean;csrf?:string};
-const blank:Product={id:0,name:'',price:0,newPrice:null,description:'',link:'',images:[],category:'',inStock:true};
+type Section='catalog'|AdminSection;
+const blank:Product={id:0,name:'',price:0,newPrice:null,description:'',link:'',images:[],category:'',stock:0,inStock:false};
 
 async function request(url:string,init?:RequestInit){
  const response=await fetch(url,{...init,cache:'no-store'}),body=await response.json();
@@ -19,7 +22,7 @@ export default function Admin(){
  const[auth,setAuth]=useState<State|null>(null),[password,setPassword]=useState(''),[items,setItems]=useState<Product[]>([]),
   [revision,setRevision]=useState(''),[query,setQuery]=useState(''),[filter,setFilter]=useState(''),
   [edit,setEdit]=useState<Product|null>(null),[files,setFiles]=useState<File[]>([]),
-  [msg,setMsg]=useState(''),[err,setErr]=useState(''),[busy,setBusy]=useState(false);
+  [msg,setMsg]=useState(''),[err,setErr]=useState(''),[busy,setBusy]=useState(false),[section,setSection]=useState<Section>('catalog');
 
  const load=useCallback(async()=>{try{const j=await request('/api/admin/products');setItems((j.products as Product[]).map(p=>({...p,inStock:isInStock(p)})));setRevision(j.revision);setErr('')}catch(e){setErr((e as Error).message)}},[]);
 
@@ -44,7 +47,7 @@ export default function Admin(){
   if(!edit||!auth?.csrf)return;
   setBusy(true);setErr('');setMsg('Yadda saxlanılır…');
   try{
-   const previous=items.find(x=>x.id===edit.id),stockChanged=!!previous&&isInStock(previous)!==isInStock(edit);
+    const previous=items.find(x=>x.id===edit.id),stockChanged=!!previous&&(getStock(previous)!==getStock(edit)||isInStock(previous)!==isInStock(edit));
    const fd=new FormData();
    fd.set('revision',revision);
    fd.set('product',JSON.stringify(edit));
@@ -74,11 +77,23 @@ export default function Admin(){
   try{
    const fd=new FormData();
    fd.set('revision',revision);
-   fd.set('product',JSON.stringify({...p,inStock}));
+   const stock=inStock?Math.max(1,getStock(p)??1):0;
+   fd.set('product',JSON.stringify({...p,stock,inStock:stock>0}));
    await request('/api/admin/products',{method:'PATCH',headers:{'x-csrf-token':auth.csrf},body:fd});
    setMsg('Məhsulun statusu yeniləndi ✓');
    await load();
   }catch(e){setMsg('');setErr((e as Error).message)}finally{setBusy(false)}
+ };
+
+ const changeStock=async(p:Product,stock:number)=>{
+  if(!auth?.csrf||busy)throw new Error('Sorğu hazırda icra olunur');
+  if(!Number.isSafeInteger(stock)||stock<0)throw new Error('Stok sayı 0 və ya daha böyük tam ədəd olmalıdır');
+  setBusy(true);setErr('');setMsg('Stok yenilənir…');
+  try{
+   const fd=new FormData();fd.set('revision',revision);fd.set('product',JSON.stringify({...p,stock,inStock:stock>0}));
+   await request('/api/admin/products',{method:'PATCH',headers:{'x-csrf-token':auth.csrf},body:fd});
+   setMsg('Stok yeniləndi ✓');await load();
+  }catch(error){setMsg('');setErr((error as Error).message);throw error}finally{setBusy(false)}
  };
 
  const shown=useMemo(()=>items.filter(p=>
@@ -103,51 +118,35 @@ export default function Admin(){
  );
 
  return (
-  <main className="admin">
-   <header>
-    <div>
-     <p className="eyebrow">VIBE AZ</p>
-     <h1>Kataloq</h1>
-     <p className="meta">{items.length} məhsul{revision&&' · reviziya '+revision.slice(0,7)}</p>
-    </div>
-    <button className="secondary" onClick={async()=>{
-     try{await request('/api/admin/auth/logout',{method:'POST',headers:{'x-csrf-token':auth.csrf||''}})}finally{location.reload()}
-    }}>Çıxış</button>
-   </header>
+  <main className="admin admin-shell">
+   <aside className="admin-sidebar">
+    <div className="admin-brand"><img src="/logo.jpeg" alt="VIBE AZ"/><div><b>VIBE AZ</b><span>Admin Panel</span></div></div>
+    <button type="button" className="new-sale-button" onClick={()=>setSection('pos')}><Plus size={19}/> Yeni satış</button>
+    <nav aria-label="Admin bölmələri">
+     <button type="button" className={section==='catalog'?'active':''} onClick={()=>setSection('catalog')}><LayoutGrid size={18}/> Kataloq</button>
+     <button type="button" className={section==='pos'?'active':''} onClick={()=>setSection('pos')}><ShoppingCart size={18}/> Kassa</button>
+     <button type="button" className={section==='sales'?'active':''} onClick={()=>setSection('sales')}><ReceiptText size={18}/> Satışlar</button>
+     <button type="button" className={section==='reports'?'active':''} onClick={()=>setSection('reports')}><BarChart3 size={18}/> Hesabatlar</button>
+     <button type="button" className={section==='stock'?'active':''} onClick={()=>setSection('stock')}><Boxes size={18}/> Stok</button>
+    </nav>
+    <div className="sidebar-meta"><span>{items.length} məhsul</span><span>{revision&&'rev. '+revision.slice(0,7)}</span></div>
+    <button className="sidebar-logout" onClick={async()=>{try{await request('/api/admin/auth/logout',{method:'POST',headers:{'x-csrf-token':auth.csrf||''}})}finally{location.reload()}}}><LogOut size={17}/> Çıxış</button>
+   </aside>
+   <div className="admin-workspace">
+    <header className="mobile-admin-header"><div><p className="eyebrow">VIBE AZ</p><h1>{section==='catalog'?'Kataloq':section==='pos'?'Kassa':section==='sales'?'Satışlar':section==='reports'?'Hesabatlar':'Stok'}</h1></div><button type="button" onClick={()=>setSection('pos')}><Plus size={18}/> Yeni satış</button></header>
+    {auth.catalogConfigured===false&&<p className="error">Kataloq serverdə konfiqurasiya edilməyib. Giriş işləyir, lakin məhsulları oxumaq və yadda saxlamaq mümkün deyil.</p>}
 
-   {auth.catalogConfigured===false&&<p className="error">Kataloq serverdə konfiqurasiya edilməyib. Giriş işləyir, lakin məhsulları oxumaq və yadda saxlamaq mümkün deyil.</p>}
-
-   <section className="toolbar">
-    <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ad və ya ID üzrə axtar" aria-label="Axtarış"/>
-    <select value={filter} onChange={e=>setFilter(e.target.value)} aria-label="Kateqoriya">
-     <option value="">Bütün kateqoriyalar</option>
-     {categories.map(c=><option key={c.id} value={c.id}>{c.az}</option>)}
-    </select>
-     <button onClick={()=>{setEdit({...blank,id:Math.max(0,...items.map(x=>x.id))+1});setFiles([])}} disabled={auth.catalogConfigured===false||busy}>Məhsul əlavə et</button>
-   </section>
-
-   {err&&<p className="error">{err}</p>}
-   {msg&&!err&&<p className="status">{msg}</p>}
-
-   {shown.length===0
-    ?<p className="empty">{items.length===0?'Hələ məhsul yoxdur':'Heç nə tapılmadı'}</p>
-    :<section className="grid">
-      {shown.map(p=>
-       <article className="card" key={p.id}>
-         <img className={isInStock(p)?'':'unavailable'} src={p.images[0]||'/logo.jpeg'} alt="" loading="lazy"/>
-         <div className="body">
-         <span className="name">#{p.id} · {p.name}</span>
-         <span className="price">{p.newPrice??p.price} AZN</span>
-          {p.category&&<span className="tag">{categoryLabel(p.category,'az')}</span>}
-          <div className="stock-row"><span>Stok:</span><button type="button" role="switch" aria-checked={isInStock(p)} aria-label={`${p.name}: ${isInStock(p)?'stokda var':'stokda yoxdur'}`} className={`stock-switch ${isInStock(p)?'active':''}`} onClick={()=>updateStock(p,!isInStock(p))} disabled={busy}><span/></button><b>{isInStock(p)?'Stokda var':'Stokda yoxdur'}</b></div>
-          <div className="actions">
-           <button className="secondary" onClick={()=>{setEdit({...p,category:p.category||'',images:[...p.images],inStock:isInStock(p)});setFiles([])}}>Dəyiş</button>
-          <button className="danger" onClick={()=>remove(p)} disabled={busy}>Sil</button>
-         </div>
-        </div>
-       </article>
-      )}
-     </section>}
+    {section==='catalog'?<>
+     <div className="section-heading catalog-heading"><div><p className="eyebrow">Məhsullar</p><h2>Kataloq</h2><p className="meta">{items.length} məhsul{revision&&' · reviziya '+revision.slice(0,7)}</p></div></div>
+     <section className="toolbar">
+      <input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Ad və ya ID üzrə axtar" aria-label="Axtarış"/>
+      <select value={filter} onChange={e=>setFilter(e.target.value)} aria-label="Kateqoriya"><option value="">Bütün kateqoriyalar</option>{categories.map(c=><option key={c.id} value={c.id}>{c.az}</option>)}</select>
+      <button onClick={()=>{setEdit({...blank,id:Math.max(0,...items.map(x=>x.id))+1});setFiles([])}} disabled={auth.catalogConfigured===false||busy}>Məhsul əlavə et</button>
+     </section>
+     {err&&<p className="error">{err}</p>}{msg&&!err&&<p className="status">{msg}</p>}
+     {shown.length===0?<p className="empty">{items.length===0?'Hələ məhsul yoxdur':'Heç nə tapılmadı'}</p>:<section className="grid">{shown.map(p=><article className="card" key={p.id}><img className={isInStock(p)?'':'unavailable'} src={p.images[0]||'/logo.jpeg'} alt="" loading="lazy"/><div className="body"><span className="name">#{p.id} · {p.name}</span><span className="price">{p.newPrice??p.price} AZN</span>{p.category&&<span className="tag">{categoryLabel(p.category,'az')}</span>}<div className="stock-row"><span>Stok:</span><button type="button" role="switch" aria-checked={isInStock(p)} aria-label={`${p.name}: ${isInStock(p)?'stokda var':'stokda yoxdur'}`} className={`stock-switch ${isInStock(p)?'active':''}`} onClick={()=>updateStock(p,!isInStock(p))} disabled={busy}><span/></button><b>{getStock(p)===undefined?(isInStock(p)?'Stokda var':'Stokda yoxdur'):`${getStock(p)} ədəd`}</b></div><div className="actions"><button className="secondary" onClick={()=>{setEdit({...p,category:p.category||'',images:[...p.images],inStock:isInStock(p)});setFiles([])}}>Dəyiş</button><button className="danger" onClick={()=>remove(p)} disabled={busy}>Sil</button></div></div></article>)}</section>}
+    </>:<AdminPos mode={section} products={items} csrf={auth.csrf||''} busy={busy} onCatalogChanged={load} onStockChange={changeStock} onOpenSale={()=>setSection('pos')}/>}
+   </div>
 
    {edit&&
     <div className="modal" role="dialog" aria-modal="true" aria-label="Məhsul redaktoru">
@@ -172,7 +171,10 @@ export default function Admin(){
        <label>Endirimli qiymət
         <input type="number" min="0" step="0.01" value={edit.newPrice??''} onChange={e=>setEdit({...edit,newPrice:e.target.value===''?null:Number(e.target.value)})}/>
        </label>
-       <div className="wide stock-field"><span>Məhsulun mövcudluğu</span><button type="button" role="switch" aria-checked={isInStock(edit)} className={`stock-switch large ${isInStock(edit)?'active':''}`} onClick={()=>setEdit({...edit,inStock:!isInStock(edit)})}><span/></button><b>{isInStock(edit)?'Stokda var':'Stokda yoxdur'}</b></div>
+       <label>Stok sayı
+         <input type="number" min="0" step="1" inputMode="numeric" value={getStock(edit)??''} placeholder="0" onChange={e=>{const value=e.target.value;setEdit({...edit,...(value===''?{stock:0,inStock:false}:{stock:Math.max(0,Math.trunc(Number(value))),inStock:Number(value)>0})})}}/>
+       </label>
+       <div className="stock-field"><span>Məhsulun mövcudluğu</span><b>{getStock(edit)===undefined?'Stok təyin edilməyib':isInStock(edit)?'Stokda var':'Stokda yoxdur'}</b></div>
        <label className="wide">Təsvir
         <textarea value={edit.description} maxLength={10000} onChange={e=>setEdit({...edit,description:e.target.value})}/>
        </label>

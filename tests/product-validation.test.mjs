@@ -14,6 +14,13 @@ test('product stock is strict while legacy catalog data can default to available
  assert.equal(validateProductInput(legacy,categories,{allowLegacyStock:true}).inStock,true);
 });
 
+test('tracked stock controls availability and rejects invalid quantities',()=>{
+ assert.deepEqual(validateProductInput({...base,stock:0,inStock:true},categories),{...base,stock:0,inStock:false});
+ assert.equal(validateProductInput({...base,stock:12,inStock:false},categories).inStock,true);
+ assert.throws(()=>validateProductInput({...base,stock:-1},categories));
+ assert.throws(()=>validateProductInput({...base,stock:1.5},categories));
+});
+
 test('product text is rendered as escaped text, not executable HTML',()=>{
  const payload='<img src=x onerror=alert(1)>';
  const product=validateProductInput({...base,name:payload},categories);
