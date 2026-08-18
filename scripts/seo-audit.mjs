@@ -9,11 +9,16 @@ const categorySource=fs.readFileSync(path.join(root,'src','data','categories.ts'
 const categories=[...categorySource.matchAll(/\{id:\s*'([^']+)'/g)].map(match=>match[1]);
 const usedCategories=categories.filter(id=>products.some(product=>product.category===id));
 const publicPaths=['/','/catalog/',...usedCategories.map(id=>`/catalog/${id}/`),...products.map(product=>`/product/${product.id}/`)];
+const faviconAssets=['/favicon.ico','/favicon-48.png','/favicon-96.png','/favicon-144.png','/apple-touch-icon.png','/icon-192.png','/icon-512.png'];
 const errors=[];
 const fail=(message)=>errors.push(message);
 const unique=new Set(publicPaths);
 
 if(unique.size!==publicPaths.length)fail(`duplicate public paths: ${publicPaths.length-unique.size}`);
+for(const asset of faviconAssets){
+ const file=path.join(root,'public',asset.slice(1));
+ if(!fs.existsSync(file))fail(`missing favicon asset: ${asset}`);
+}
 for(const url of publicPaths){
  const parsed=new URL(url,site);
  if(parsed.origin!==site)fail(`wrong origin: ${url}`);
@@ -36,6 +41,7 @@ const arg=process.argv.find(value=>value.startsWith('--http='));
 const base=arg?arg.slice('--http='.length).replace(/\/$/,''):null;
 const htmlValue=(html,pattern)=>html.match(pattern)?.[1]?.trim()||'';
 const meta=(html,name)=>htmlValue(html,new RegExp(`<meta[^>]+name=["']${name}["'][^>]+content=["']([^"']*)["']`,'i'));
+const propertyMeta=(html,property)=>htmlValue(html,new RegExp(`<meta[^>]+property=["']${property}["'][^>]+content=["']([^"']*)["']`,'i'));
 const canonical=(html)=>htmlValue(html,/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)||htmlValue(html,/<link[^>]+href=["']([^"']+)["'][^>]+rel=["']canonical["']/i);
 const headingCount=(html)=>[...html.matchAll(/<h1\b/gi)].length;
 const jsonLdBlocks=(html)=>[...html.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)].flatMap(match=>{try{return [JSON.parse(match[1])]}catch{return []}});
@@ -61,6 +67,35 @@ if(base){
   const expected=['User-Agent: *','Allow: /','Disallow: /admin/','Disallow: /api/','','Sitemap: https://vibeaz.org/sitemap.xml'].join('\n');
   if(robotsText!==expected)fail('robots.txt does not match the required directives');
   if(/vibe\.az|vercel\.app|localhost/i.test(robotsText))fail('robots.txt contains a legacy host');
+
+  const home=await fetchText(`${base}/`);
+  if(home.response.status!==200)fail(`home status ${home.response.status}`);
+  const homeKeywords=meta(home.text,'keywords').toLowerCase();
+  for(const term of ['vibe az','vibe az baki','vibe az baku','vibe az bakı']){
+   if(!homeKeywords.includes(term))fail(`home keywords missing: ${term}`);
+  }
+  const homeDescription=meta(home.text,'description').toLowerCase();
+  const homeOgDescription=propertyMeta(home.text,'og:description').toLowerCase();
+  for(const term of ['vibe az baki','vibe az baku']){
+   if(!homeDescription.includes(term))fail(`home description missing: ${term}`);
+   if(!homeOgDescription.includes(term))fail(`home Open Graph description missing: ${term}`);
+  }
+  const homeVisibleText=home.text.toLocaleLowerCase('az');
+  if(!homeVisibleText.includes('vibe az bakı')||!homeVisibleText.includes('vibe az baku'))fail('home visible local brand phrase missing');
+  if(!/<link[^>]+rel=["'](?:shortcut )?icon["'][^>]+favicon-(?:48|96|144)\.png/i.test(home.text))fail('home favicon link missing');
+  if(!/<link[^>]+rel=["']apple-touch-icon["'][^>]+apple-touch-icon\.png/i.test(home.text))fail('home apple-touch-icon link missing');
+  if(!/<link[^>]+rel=["']manifest["'][^>]+manifest\.webmanifest/i.test(home.text))fail('home manifest link missing');
+  for(const asset of faviconAssets){
+   const response=await fetchText(`${base}${asset}`);
+   if(response.response.status!==200)fail(`${asset}: HTTP ${response.response.status}`);
+  }
+  const manifest=await fetchText(`${base}/manifest.webmanifest`);
+  if(manifest.response.status!==200)fail(`manifest status ${manifest.response.status}`);
+  try{
+   const manifestData=JSON.parse(manifest.text);
+   const manifestIcons=Array.isArray(manifestData.icons)?manifestData.icons:[];
+   for(const expected of ['/icon-192.png','/icon-512.png'])if(!manifestIcons.some(icon=>icon?.src===expected))fail(`manifest icon missing: ${expected}`);
+  }catch{fail('manifest is not valid JSON');}
 
   const sitemap=await fetchText(`${base}/sitemap.xml`);
   if(sitemap.response.status!==200)fail(`sitemap status ${sitemap.response.status}`);

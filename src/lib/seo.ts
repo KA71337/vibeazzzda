@@ -4,6 +4,8 @@ import {categories,categoryLabel,type CategoryId} from '@/data/categories';
 export const SITE_URL='https://vibeaz.org';
 export const SITE_NAME='VIBE AZ';
 export const SITE_LOCALE='az_AZ';
+export const SITE_DESCRIPTION='VIBE AZ Bakı (VIBE AZ Baki / VIBE AZ Baku): Azərbaycanda idman, fitnes, oyun və aktiv həyat məhsulları. Bakı və ölkədaxili çatdırılma üçün seçim və sifariş.';
+export const SITE_KEYWORDS=['VIBE AZ','vibe az','vibe az baki','vibe az baku','vibe az bakı','idman məhsulları Bakı','idman mağazası Azərbaycan'];
 export const ORGANIZATION_ID=`${SITE_URL}/#organization`;
 
 const categoryDescriptions:Record<CategoryId,string>={

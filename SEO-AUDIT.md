@@ -17,6 +17,8 @@ Audit date: 2026-08-18
 | Hreflang | N/A | AZ/RU/EN are client-side language variants without separate URL routes; no false hreflang URLs are emitted. Default language is AZ. |
 | Open Graph | PASS | Home, catalog/category and product metadata use the canonical URL, title, description and image. |
 | Organization Schema | PASS | Organization and WebSite JSON-LD use verified site/contact/social data only. |
+| Favicon | PASS | Google-compatible 48/96/144px PNG icons, ICO fallback, 180px Apple icon and 192/512px manifest icons are linked from the home page. |
+| Brand Search Signals | PASS | `VIBE AZ`, Bakı/Baki/Baku variants are present in metadata and natural visible footer text; hidden text was not used. |
 | Image SEO | PASS | Product images have descriptive alt text, stable dimensions/frames, Next Image optimization and Product JSON-LD image URLs. |
 | Internal Linking | PASS | Home -> category -> product links use stable slash-canonical routes; products link back to their category. |
 | Core Web Vitals | TECHNICAL PASS / FIELD DATA PENDING | Next Image optimization is enabled, image dimensions are constrained, local fonts are used and the production build succeeds. CrUX/PageSpeed field data is not available in this local audit. |
@@ -70,6 +72,8 @@ Direct production probes show that `vibe.az` has no DNS record, `vibeazzz.vercel
 - Added Organization and WebSite schema with absolute canonical URLs.
 - Added natural AZ home SEO copy and category/product internal links without keyword stuffing.
 - Added descriptive product/gallery alt text and enabled Next/Vercel image optimization.
+- Added Google-compatible favicon sizes, Apple touch icon and web app manifest icons.
+- Added restrained brand/location query variants to keywords, description, Open Graph and visible footer content without hidden text.
 - Added noindex controls for non-SEO workflows and admin/API paths.
 - Preserved the Google verification file at `public/google714a63d792693c9a.html` unchanged.
 
